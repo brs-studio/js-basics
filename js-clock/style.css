@@ -1,0 +1,52 @@
+html {
+  text-align: center;
+}
+
+h1 {
+  color: orangered;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h3 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    height: 50px;
+    width: 50px;
+}
+
+#one {
+  border: 3px solid orangered;
+  margin-bottom: 10px;
+}
+
+#two {
+  border: 3px solid orangered;
+}
+
+.clock-one {
+  display: flex;
+  flex-direction: column;
+  color: #213e3b;
+  font-size: 1.7rem;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 5px;
+}
+
+.clock-two {
+  display: flex;
+  justify-content: center;
+  color: #213e3b;
+  font-size: 1.7rem;
+  font-weight: none;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 5px;
+  margin-top: -25px;
+}

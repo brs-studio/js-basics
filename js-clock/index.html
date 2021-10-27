@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Clock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="/brs_logo.png" alt="BRS-LOGO" srcset="">
+        <h1>JS DIGITAL CLOCK</h1>
+    </nav>
+    <section id="one">
+        <h3>Clock One</h3>
+        <div id="clock-one" class="clock-one" onload="showClock()"></div>
+        <br>
+    </section>
+    <section id="two">
+        <h3>Clock Two</h3>
+        <div id="clock-two" class="clock-two" onload="showClock()">
+            <p id="hr"></p>
+            <p id="min"></p>
+            <p id="sec"></p>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
