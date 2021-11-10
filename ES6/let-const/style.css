@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-bottom: 2px solid orangered;
+  background-color: lightyellow;
+  padding: 0 15px;
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+}
