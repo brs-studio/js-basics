@@ -1,0 +1,159 @@
+<!--
+     Author: Build Rise Shine with Nyros (BRS) 
+     Created: 07-02-2023 
+     Library / Component: Home Page
+     Description: Main page  for the app
+     (c) Copyright by BRS with Nyros. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/3da1a747b2.js"></script>
+    <title>Virtual Keyboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/keyboard.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="d-flex bg-gradient">
+        <div class="d-flex flex-grow-1">
+          <nav class="courseTitle">
+            <button class="navbar-brand border-0">
+              <img src="assets/img/logo.png" alt="logo" />
+            </button>
+          </nav>
+          <div class="flex-grow-1">
+            <div class="ReactTitle ps-3 d-flex align-items-center">
+              <img src="assets/img/react-2@2x.png" alt="logo" />
+              <h3 class="mb-0">JS Apps</h3>
+            </div>
+            <div class="d-flex ps-3 align-items-center">
+              <div class="flex-grow-1">
+                <h4>Virtual Keyboard</h4>
+                <p class="pb-0 mb-0 text-start">Purpose: Virtual Keyboard</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main" class="container pt-5 pb-5">
+      <section>
+        <div class="container">
+          <div class="textarea">
+            <textarea placeholder="enter some text"></textarea>
+          </div>
+          <div class="keyboard">
+            <div class="row">
+              <button class="keys btn">1</button>
+              <button class="keys btn">2</button>
+              <button class="keys btn">3</button>
+              <button class="keys btn">4</button>
+              <button class="keys btn">5</button>
+              <button class="keys btn">6</button>
+              <button class="keys btn">7</button>
+              <button class="keys btn">8</button>
+              <button class="keys btn">9</button>
+              <button class="keys btn">0</button>
+              <button id="delete" class="delete btn">Delete</button>
+            </div>
+            <div class="row">
+              <button class="keys btn">!</button>
+              <button class="keys btn">@</button>
+              <button class="keys btn">#</button>
+              <button class="keys btn">$</button>
+              <button class="keys btn">%</button>
+              <button class="keys btn">^</button>
+              <button class="keys btn">&</button>
+              <button class="keys btn">*</button>
+              <button class="keys btn">(</button>
+              <button class="keys btn">)</button>
+              <button class="keys btn">[</button>
+              <button class="keys btn">]</button>
+            </div>
+            <div class="row">
+              <button class="keys btn">q</button>
+              <button class="keys btn">w</button>
+              <button class="keys btn">e</button>
+              <button class="keys btn">r</button>
+              <button class="keys btn">t</button>
+              <button class="keys btn">y</button>
+              <button class="keys btn">u</button>
+              <button class="keys btn">i</button>
+              <button class="keys btn">o</button>
+              <button class="keys btn">p</button>
+            </div>
+            <div class="row">
+              <button class="keys btn">a</button>
+              <button class="keys btn">s</button>
+              <button class="keys btn">d</button>
+              <button class="keys btn">f</button>
+              <button class="keys btn">g</button>
+              <button class="keys btn">h</button>
+              <button class="keys btn">j</button>
+              <button class="keys btn">k</button>
+              <button class="keys btn">l</button>
+            </div>
+            <div class="row">
+              <button class="keys btn">z</button>
+              <button class="keys btn">x</button>
+              <button class="keys btn">c</button>
+              <button class="keys btn">v</button>
+              <button class="keys btn">b</button>
+              <button class="keys btn">n</button>
+              <button class="keys btn">m</button>
+              <button id="shift" class="shift btn">Shift</button>
+            </div>
+            <div class="row">
+              <button id="space" class="space btn">Space</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-dark">
+      <div class="d-flex justify-content-between px-5">
+        <div>ALL RIGHTS RESERVED BRS STUDIO 2022</div>
+        <div>
+          <button
+            onclick="setTheme('#1A4B84')"
+            class="theme-switch theme-switch-chathams_blue"
+          ></button>
+          <button
+            onclick="setTheme('#991E14')"
+            class="theme-switch theme-switch-tamarillo"
+          ></button>
+          <button
+            onclick="setTheme('#FEAD06')"
+            class="theme-switch theme-switch-yellow_sea"
+          ></button>
+        </div>
+        <div>
+          <img src="assets/img/footer-logo.png" alt="logo" />
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>
