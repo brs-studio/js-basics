@@ -1,0 +1,605 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="assets/images/favicon_32x32.png" type="image/png">
+        <title>Blue Origin | Home :: Blue Origin</title>
+        <meta name="description" content="Content goes here">
+        <meta name="author" content="SitePoint">
+      
+        <!--Open Graph Meta tags-->
+        <meta property="og:title" content="Blue origin">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+        <meta property="og:description" content="Content goes here">
+        <meta property="og:image" content="image.png">
+      
+        <!--Favicon-->
+        <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="assets/css/theme.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/cart.css">
+      
+        <script src="./assets/js/main.js" async></script>
+      </head>
+
+<body>
+    <!--Start: Header-->
+    <div>
+        <div id="NavDrawer" class="drawer drawer--right">
+            <div class="drawer__fixed-header">
+                <div class="drawer__header appear-animation appear-delay-1">
+                    <div class="drawer__title"></div>
+                    <div class="drawer__close">
+                        <button type="button" class="drawer__close-button js-drawer-close">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+                            <span class="icon__fallback-text">Close menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="drawer__inner">
+                <ul class="mobile-nav" role="navigation" aria-label="Primary">
+                    <li class="mobile-nav__item appear-animation appear-delay-2">
+                        <a href="#" class="mobile-nav__link">New Shepard</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-animation appear-delay-3">
+                        <a href="#" class="mobile-nav__link">Mens</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-animation appear-delay-4">
+                        <a href="#" class="mobile-nav__link">Womens</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-animation appear-delay-5">
+                        <a href="#" class="mobile-nav__link">Kids</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-animation appear-delay-6">
+                        <a href="#" class="mobile-nav__link">Accessories</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-animation appear-delay-7">
+                        <a href="#" class="mobile-nav__link">Create an Account</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-animation appear-delay-8">
+                        <a href="#" class="mobile-nav__link">Last Chance</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-animation appear-delay-9">
+                        <a href="#" class="mobile-nav__link">Log in</a>
+                    </li>
+    
+                    <li class="mobile-nav__spacer"></li>
+                </ul>
+    
+                <ul class="mobile-nav__social"></ul>
+            </div>
+        </div>
+    
+        <div id="CartDrawer" class="drawer drawer--right drawer--has-fixed-footer">
+            <div class="drawer__fixed-header">
+                <div class="drawer__header appear-animation appear-delay-1">
+                    <div class="drawer__title">Cart</div>
+                    <div class="drawer__close">
+                        <button type="button" class="drawer__close-button js-drawer-close">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+                            <span class="icon__fallback-text">Close cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="drawer__inner">
+                <div id="CartContainer" class="drawer__cart"><p class="appear-animation appear-delay-3">Your cart is currently empty.</p></div>
+            </div>
+        </div>
+    
+        <div>
+            <div class="header-wrapper is-light animateIn" id='nav_bar'>
+                <div class="site-header-sticky" style="height: 131.875px;">
+                    <header class="site-header">
+                        <div class="page-width">
+                            <div class="header-layout header-layout--left-drawer">
+                                <div class="header-item header-item--logo">                                    
+                                    <div class="h1 site-header__logo">
+                                        <a href="/" class="site-header__logo-link logo--has-inverted">
+                                            <img
+                                                class="small--hide"
+                                                src="assets/images/shoplogo_270x.png"                                                
+                                                alt="Blue Origin Shop"
+                                               
+                                            />
+                                            <img
+                                                class="medium-up--hide"
+                                                src="assets/images/shoplogo_140x.png"                                               
+                                                alt="Blue Origin Shop"
+                                            />
+                                        </a>
+    
+                                        <a href="/"  class="site-header__logo-link logo--inverted">
+                                            <img
+                                                class="small--hide"
+                                                src="assets/images/shoplogo_270x.png"                                                
+                                                alt="Blue Origin Shop"
+                                                
+                                            />
+                                            <img
+                                                class="medium-up--hide"
+                                                src="assets/images/shoplogo_140x.png?v=1584376714"                                                
+                                                alt="Blue Origin Shop"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+    
+                                <div class="header-item header-item--icons">
+                                    <div class="site-nav site-nav--icons">
+                                        <div class="site-nav__icons">
+                                            <a class="site-nav__link site-nav__link--icon medium-down--hide" href="/account">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewBox="0 0 64 64">
+                                                    <path d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.41 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.75 2.7 9.51 6 11.41v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z"></path>
+                                                </svg>
+                                                <span class="icon__fallback-text">
+                                                    Log in
+                                                </span>
+                                            </a>
+    
+                                            <a href="" class="site-nav__link site-nav__link--icon js-search-header js-no-transition">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
+                                                    <path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
+                                                </svg>
+                                                <span class="icon__fallback-text">Search</span>
+                                            </a>
+    
+                                            <button type="button" class="site-nav__link site-nav__link--icon js-drawer-open-nav" aria-controls="NavDrawer" aria-expanded="false">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path d="M7 15h51M7 32h43M7 49h51"></path></svg>
+                                                <span class="icon__fallback-text">Site navigation</span>
+                                            </button>
+    
+                                            <a href="cart.html" class="site-nav__link site-nav__link--icon js-drawer-open-cart js-no-transition" aria-controls="CartDrawer" aria-expanded="false">
+                                                <span class="cart-link">
+                                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 64 64">
+                                                        <path d="M14 17.44h46.79l-7.94 25.61H20.96l-9.65-35.1H3"></path>
+                                                        <circle cx="27" cy="53" r="2"></circle>
+                                                        <circle cx="47" cy="53" r="2"></circle>
+                                                    </svg>
+                                                    <span class="icon__fallback-text">Cart</span>
+                                                    <span id="cartCount" aria-hidden="true"></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="site-header__search-container">
+                            <div class="site-header__search">
+                                <div class="page-width">
+                                    <form action="/search" method="get" id="HeaderSearchForm" class="site-header__search-form" role="search">
+                                        
+                                        <button type="submit" class="text-link site-header__search-btn">
+                                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
+                                                <path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
+                                            </svg>
+                                            <span class="icon__fallback-text">Search</span>
+                                        </button>
+                                        <input type="search" name="q" value="" placeholder="Search our store" class="site-header__search-input" aria-label="Search our store" />
+                                    </form>
+                                    <button type="button" class="js-search-header-close text-link site-header__search-btn">
+                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+                                        <span class="icon__fallback-text">"Close (esc)"</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End: Header-->
+    
+
+    <!--Start: Content-->
+    <main class="main-content">
+        <div>
+            <div class="product-section">
+        
+                <div class="catmenu-bg-collection">
+                    <ul class="catmenu-bg-collection-menu">
+                        <li><a href="men.html">MENS</a></li>
+                        <!-- <li><a href="women.html">WOMENS</a></li>
+                        <li><a href="kids.html">KIDS</a></li>
+                        <li><a href="accessories.html">ACCESSORIES</a></li>
+                        <li><a href="new-shepard.html">NEW SHEPARD</a></li>
+                        <li><a href="club.html">CLUB FOR THE FUTURE</a></li>
+                        <li><a href="new-shepard.html">NEW SHEPARD</a></li>
+                        <li><a href="new.html"><b>NEW</b></a></li> -->
+                    </ul>
+                </div>
+    
+                <div id="cart-notification-container">
+                    <!-- <p><span>Item added to your cart</span></p>
+                    <div class="cart-notification-content">
+                        <img src="" alt="">
+                        <div>
+                            <p>title</p>
+                            <p>price</p>
+                        </div>
+                        <a href="cart.html">View my cart</a>
+                        <a href="men.html">continue shopping</a>
+                    </div> -->
+                </div>
+
+                <div class="page-content">
+                    <div class="page-width">
+                        <div class="grid">
+                            <div class="grid__item medium-up--three-fifths">
+                                <div data-product-images="" data-zoom="false" data-has-slideshow="true">
+                                    <div class="product__photos product__photos-6863681290426 product__photos--beside">
+                                        <div class="product__main-photos aos-init aos-animate" data-aos="">
+                                            <div id="ProductPhotos-6863681290426" class="slick-initialized slick-slider">
+                                                <div aria-live="polite" class="slick-list draggable">
+                                                    <div class="slick-track" role="listbox" style="opacity: 1; width: 1860px; transform: translate3d(0px, 0px, 0px);">
+                                                        <div
+                                                            class="starting-slide slick-slide slick-current slick-active"
+                                                            data-index="0"
+                                                            data-slick-index="0"
+                                                            aria-hidden="false"
+                                                            tabindex="-1"
+                                                            role="option"
+                                                            aria-describedby="slick-slide00"
+                                                            style="width: 620px;"
+                                                        >
+                                                            <div class="product-image-main">
+                                                                <div class="image-wrap" style="height: 0; padding-bottom: 112.5%;">
+                                                                    <img
+                                                                    id="productImg"
+                                                                    class="lazyloaded"
+                                                                    src="assets/images/ornament_9404be16-08d7-4dfe-9d49-f506b38943ef_740x.jpg"
+                                                                    alt="Commemorative NS-16 Ornament"
+                                                                />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="grid__item medium-up--two-fifths">
+                                <div class="product-single__meta">
+                                    <h1 id="productName" class="h2 product-single__title"></h1>
+                                    <span class="visually-hidden">Regular price</span>
+                                    <span id="productPrice" class="product__price" ></span>
+                                    <div class="product__unit-price hide"><span class="product__unit-price--6863681290426"></span>/<span class="product__unit-base--6863681290426"></span></div>
+                                    <hr class="hr--medium" />
+                                    <form method="post" action="" class="product-single__form">
+      
+                                        <div class="variant-wrapper variant-wrapper--button">
+                                            <label class="variant__label" for="ProductSelectSize">
+                                                Size
+                                            </label>
+                                        
+                                            <fieldset class="variant-input-wrap" name="Size" data-index="option1" id="ProductSelectSize">
+                                                <div class="variant-input" data-index="option1" data-value="S">
+                                                    <input type="radio" checked="checked" value="S" data-index="option1" name="Size" class="variant__input-5659836350617" id="ProductSelect-Size-S" />
+                                        
+                                                    <label for="ProductSelect-Size-S">S</label>
+                                                </div>
+                                        
+                                                <div class="variant-input" data-index="option1" data-value="M">
+                                                    <input type="radio" value="M" data-index="option1" name="Size" class="variant__input-5659836350617" id="ProductSelect-option-size-M" />
+                                        
+                                                    <label for="ProductSelect-option-size-M">M</label>
+                                                </div>
+                                        
+                                                <div class="variant-input" data-index="option1" data-value="L">
+                                                    <input type="radio" value="L" data-index="option1" name="Size" class="variant__input-5659836350617 disabled" id="ProductSelect-option-size-L" />
+                                        
+                                                    <label for="ProductSelect-option-size-L" class="disabled">L</label>
+                                                </div>
+                                        
+                                                <div class="variant-input" data-index="option1" data-value="XL">
+                                                    <input type="radio" value="XL" data-index="option1" name="Size" class="variant__input-5659836350617" id="ProductSelect-option-size-XL" />
+                                        
+                                                    <label for="ProductSelect-option-size-XL">XL</label>
+                                                </div>
+                                        
+                                                <div class="variant-input" data-index="option1" data-value="2XL">
+                                                    <input type="radio" value="2XL" data-index="option1" name="Size" class="variant__input-5659836350617" id="ProductSelect-option-size-2XL" />
+                                        
+                                                    <label for="ProductSelect-option-size-2XL">2XL</label>
+                                                </div>
+                                        
+                                                <div class="variant-input" data-index="option1" data-value="3XL">
+                                                    <input type="radio" value="3XL" data-index="option1" name="Size" class="variant__input-5659836350617" id="ProductSelect-option-size-3XL" />
+                                        
+                                                    <label for="ProductSelect-option-size-3XL">3XL</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        
+                                        <div class="product__quantity product__quantity--button">
+                                            <label for="Quantity">Quantity</label>
+                                            <div class="js-qty__wrapper">
+                                                <input type="number" id="quantity" class="js-qty__num" value="1" min="1" aria-label="quantity" pattern="[0-9]*" name="quantity" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1" />
+                                                <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Reduce item quantity by one">
+                                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 20 20">
+                                                        <path fill="#444" d="M17.543 11.029H2.1A1.032 1.032 0 0 1 1.071 10c0-.566.463-1.029 1.029-1.029h15.443c.566 0 1.029.463 1.029 1.029 0 .566-.463 1.029-1.029 1.029z"></path>
+                                                    </svg>
+                                                    <span class="icon__fallback-text" aria-hidden="true">−</span>
+                                                </button>
+                                                <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Increase item quantity by one">
+                                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 20 20">
+                                                        <path
+                                                            fill="#444"
+                                                            d="M17.409 8.929h-6.695V2.258c0-.566-.506-1.029-1.071-1.029s-1.071.463-1.071 1.029v6.671H1.967C1.401 8.929.938 9.435.938 10s.463 1.071 1.029 1.071h6.605V17.7c0 .566.506 1.029 1.071 1.029s1.071-.463 1.071-1.029v-6.629h6.695c.566 0 1.029-.506 1.029-1.071s-.463-1.071-1.029-1.071z"
+                                                        ></path>
+                                                    </svg>
+                                                    <span class="icon__fallback-text" aria-hidden="true">+</span>
+                                                </button>
+                                            </div>
+                                        </div>
+    
+                                        <button id="addToCart" type="submit" name="add" id="AddToCart-6863681290426" class="btn btn--full btn--no-animate add-to-cart">
+                                            
+                                               Add to cart
+                                            
+                                        </button>
+    
+                                        
+                                    </form>
+    
+                                    <div class="product-single__description rte">
+                                        Metal ornament featuring NS-16 patch and commemorative year of New Shepard's First Human Flight. Features royal ribbon to hang and packaged in custom box. Limited Edition.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div>
+            <div>
+                <div data-subsection="" data-section-type="collection-template" class="index-section">
+                    <div class="page-width">
+                        <header class="section-header">
+                            <h3 class="section-header__title">
+                                You may also like
+                            </h3>
+                        </header>
+                    </div>
+    
+                    <div class="page-width page-width--flush-small">
+                        <div class="grid-overflow-wrapper">
+                            <div class="product-recommendations-placeholder">
+                                <div class="product-recommendations">
+                                    <div class="product-single__related grid grid--uniform aos-init aos-animate">
+                                        <div class="grid__item grid-product small--one-half medium-up--one-third aos-init aos-animate" data-aos="row-of-3">
+                                            <div class="grid-product__content">
+                                                <a href="" class="grid-product__link">
+                                                    <div class="grid-product__image-mask">
+                                                        <div
+                                                            class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                                            
+    
+                                                            style="background-image: url('assets/images/ornament-12_360x.jpg');"
+                                                        >
+                                                            
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="grid-product__meta">
+                                                        <div class="grid-product__title">3D New Shepard Booster Ornament</div>
+    
+                                                        <div class="grid-product__price">
+                                                            <span>
+                                                                $19.95
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="grid__item grid-product small--one-half medium-up--one-third aos-init aos-animate" data-aos="row-of-3">
+                                            <div class="grid-product__content">
+                                                <a href="" class="grid-product__link">
+                                                    <div class="grid-product__image-mask">
+                                                        <div
+                                                            class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                                            
+                                                            style="background-image: url('assets/images/Women-Heavy-Duty-Wordmark-Tee_360x.jpg');"
+                                                        >
+                                                            
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="grid-product__meta">
+                                                        <div class="grid-product__title">Women Heavy Duty Logo Tee</div>
+    
+                                                        <div class="grid-product__price">
+                                                            <span>
+                                                                $17.95
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="grid__item grid-product small--one-half medium-up--one-third aos-init aos-animate" data-aos="row-of-3">
+                                            <div class="grid-product__content">
+                                                <a href="#" class="grid-product__link">
+                                                    <div class="grid-product__image-mask">
+                                                        <div
+                                                            class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                                            
+                                                            style="background-image: url('assets/images/christmas-sweater_360x.jpg');"
+                                                        >
+                                                            
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="grid-product__meta">
+                                                        <div class="grid-product__title">Ugly Holiday Sweater</div>
+    
+                                                        <div class="grid-product__price">
+                                                            <span>
+                                                                $74.95
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+    <!--End: Content-->
+    
+    <!--Start: Footer-->
+    <div>
+        <footer class="site-footer">
+            <div class="page-width">
+                <div class="grid">
+                    <div class="grid__item small--hide footerItemLeft">
+                        <div class="footer__logo-social">
+                            <div class="footer__logo">
+                                <a href="/">
+                                    <img src="assets/images/Simple_White_x91@2x.png" alt="Blue Origin Shop" />
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+    
+                    <div class="grid__item footerItemRight">
+                        <p class="footer__title small--hide">Contact</p>
+                        <button type="button" class="footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide" aria-expanded="false">
+                            Contact
+                            <span class="collapsible-trigger__icon collapsible-trigger__icon--open" >
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4px" stroke="#FFFFFF" fill="none" fill-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                        </button>
+    
+                        <div class="collapsible-content collapsible-content--small">
+                            <div class="collapsible-content__inner">
+                                <div class="footer__collapsible">
+                                    <p>
+                                        <a href="mailto:shop@blueorigin.com" title="mailto:shop@blueorigin.com" class="js-no-transition">shop@blueorigin.com</a><br />
+                                        <br />
+                                    </p>
+                                    <p>
+                                        <a href="#" title="Privacy Policy">Privacy Policy</a><br />
+                                        <a href="#" title="Terms of Use">Terms of Use</a> <br />
+                                        <a href="#" title="Returns &amp; Exchanges">Refunds &amp; Exchanges</a><br />
+                                        <a href="#" title="Do not sell my personal information">Do Not Sell My Information</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    
+                    <div class="footer__clear small--hide"></div>
+    
+                    <div class="grid__item footer__item footerItemLeft">
+                        <div>
+                            <div class="collapsible-content__inner">
+                                <div class="footer__collapsible footer_collapsible--disabled">
+                                    <p>
+                                        For questions or concerns please contact customer service <a href="mailto:shop@blueorigin.com" title="mailto:shop@blueorigin.com" >shop@blueorigin.com</a><br />
+                                        Please allow up to 2 business days for response.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    
+                    <div class="grid__item footer__item footerItemSignup">
+                        <p class="footer__title small--hide">Sign up and save</p>
+                        <button type="button" class="footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide">
+                            Sign up and save
+                            <span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4px" stroke="#FFFFFF" fill="none" fill-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                        </button>
+    
+                        <div class="collapsible-content collapsible-content--small">
+                            <div class="collapsible-content__inner">
+                                <div class="footer__collapsible">
+                                    <p></p>
+                                    <p>Subscribe to get exclusive offers and hear first about new additions to the Blue Origin Shop.</p>
+                                    <p></p>
+    
+                                    <form method="post" action="" id="newsletter-footer">
+                                       
+    
+                                        <label for="Email" class="hidden-label">Enter your email</label>
+                                        
+                                       
+                                        <div class="footer__newsletter">
+                                            <input type="email" value="" placeholder="Enter your email" name="contact[email]" id="Email" class="footer__newsletter-input" autocorrect="off" autocapitalize="off" />
+                                            <button type="submit" class="footer__newsletter-btn" aria-label="Click to Sign Up" name="commit">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-email" viewBox="0 0 64 64">
+                                                    <path d="M63 52H1V12h62zM1 12l25.68 24h9.72L63 12M21.82 31.68L1.56 51.16m60.78.78L41.27 31.68" stroke="#FFFFFF" fill="none" stroke-width="4px"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="grid__item medium-up--hide">
+                        <div class="footer__logo-social">                            
+                            <div class="footer__logo">
+                                <a href="/">
+                                    <img src="assets/images/Simple_White_x91@2x.png" alt="Blue Origin Shop" />
+                                </a>
+                            </div>
+    
+                            <ul class="no-bullets footer__social"></ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class="footer__copyright">
+                    © 2021 Blue Origin Shop | All Rights Reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!--End: Footer-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+
+
+/* Site Header
+---------------
+*/
+
+.topHeader {
+    padding: 30px 0;
+    position: sticky;
+}
+
+.page-width {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header-layout {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.header-layout--center {
+	-ms-flex-align: center;
+	align-items: center;
+}
+.header-item {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+.header-item--logo {
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+.header-item--icons {
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+}
+
+/*================ Header layout specific styles ================*/
+.header-layout--left-center .header-item--logo,.header-layout--left-center .header-item--icons {
+	-ms-flex: 0 0 200px;
+	flex: 0 0 200px;
+	max-width: 50%;
+}
+
+@media only screen and (min-width: 590px) {
+	.header-layout--left-center .header-item--logo,.header-layout--left-center .header-item--icons {
+		min-width: 130px;
+	}
+}
+@media only screen and (min-width: 590px) {
+	.header-layout[data-logo-align="center"] .header-item--logo {
+		margin: 0 26.66667px;
+	}
+}
+.header-layout[data-logo-align="center"] .header-item--navigation,.header-layout[data-logo-align="center"] .header-item--icons {
+	-ms-flex: 1 1 130px;
+	flex: 1 1 130px;
+}
+.header-layout[data-logo-align="left"] .site-header__logo {
+	margin-right: 13.33333px;
+}
+.header-item--logo-split {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex: 1 1 100%;
+	flex: 1 1 100%;
+}
+.header-item--logo-split .header-item:not(.header-item--logo) {
+	text-align: center;
+	-ms-flex: 1 1 20%;
+	flex: 1 1 20%;
+}
+.header-item--split-left {
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+.header-item--left .site-nav {
+	margin-left: -12px;
+}
+@media only screen and (max-width: 589px) {
+	.header-item--left .site-nav {
+		margin-left: -7.5px;
+	}
+}
+.header-item--icons .site-nav {
+	margin-right: -12px;
+}
+@media only screen and (max-width: 589px) {
+	.header-item--icons .site-nav {
+		margin-right: -7.5px;
+	}
+}
+
+.header-item--logo,
+.header-layout--left-center .header-item--logo,
+.header-layout--left-center .header-item--icons {
+    -webkit-box-flex: 0 1 140px;
+    -ms-flex: 0 1 140px;
+    flex: 0 1 140px;
+}
+
+@media only screen and (min-width: 590px) {
+    .header-item--logo,
+    .header-layout--left-center .header-item--logo,
+    .header-layout--left-center .header-item--icons {
+        -webkit-box-flex: 0 0 270px;
+        -ms-flex: 0 0 270px;
+        flex: 0 0 270px;
+    }
+    .site-header__logo a {
+        max-width: 270px;
+    }
+
+    .is-light .site-header__logo .logo--inverted {
+        max-width: 270px;
+    }
+
+    .footerItemLeft {
+        width: 70%;
+    }
+
+    .footerItemRight {
+        width: 30%;
+    }
+    .footerItemSignup {
+        width: 22%;
+    }
+}
+
+.footer__logo a {
+    height: 91px;
+}
+.is-light .site-header__logo .logo--inverted {
+    max-width: 140px;
+}
+
+
+.navbar-fixed {
+	transition:0.4s top cubic-bezier(.3, .73, .3, .74);
+    top: -130px;
+    z-index: 100;
+  	position: fixed;
+    width: 100%;
+}
+
+.navbar-fixed.slideDown {
+    top:0;
+	
+	}

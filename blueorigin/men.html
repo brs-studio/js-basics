@@ -1,0 +1,685 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon_32x32.png" type="image/png">
+  <title>Blue Origin | Home :: Blue Origin</title>
+  <meta name="description" content="Content goes here">
+  <meta name="author" content="SitePoint">
+
+  <!--Open Graph Meta tags-->
+  <meta property="og:title" content="Blue origin">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="Content goes here">
+  <meta property="og:image" content="image.png">
+
+  <!--Favicon-->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <!--Start: Header wrapper -->
+    <div>
+        <div id="NavDrawer" class="drawer drawer--right">
+            <div class="drawer__fixed-header">
+                <div class="drawer__header">
+                    <div class="drawer__title"></div>
+                    <div class="drawer__close">
+                        <button type="button" class="drawer__close-button">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+                            <span class="icon__fallback-text">Close menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="drawer__inner">
+                <ul class="mobile-nav" role="navigation" aria-label="Primary">
+                    <li class="mobile-nav__item appear-delay-2">
+                        <a href="#" class="mobile-nav__link">New Shepard</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-delay-3">
+                        <a href="#" class="mobile-nav__link">Mens</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-delay-4">
+                        <a href="#" class="mobile-nav__link">Womens</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-delay-5">
+                        <a href="#" class="mobile-nav__link">Kids</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-delay-6">
+                        <a href="#" class="mobile-nav__link">Accessories</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-delay-7">
+                        <a href="#" class="mobile-nav__link">Create an Account</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-delay-8">
+                        <a href="#" class="mobile-nav__link">Last Chance</a>
+                    </li>
+    
+                    <li class="mobile-nav__item appear-delay-9">
+                        <a href="#" class="mobile-nav__link">Log in</a>
+                    </li>
+    
+                    <li class="mobile-nav__spacer"></li>
+                </ul>
+    
+                <ul class="mobile-nav__social"></ul>
+            </div>
+        </div>
+    
+        <div id="CartDrawer" class="drawer drawer--right drawer--has-fixed-footer">
+            <div class="drawer__fixed-header">
+                <div class="drawer__header appear-delay-1">
+                    <div class="drawer__title">Cart</div>
+                    <div class="drawer__close">
+                        <button type="button" class="drawer__close-button js-drawer-close">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+                            <span class="icon__fallback-text">Close cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="drawer__inner">
+                <div id="CartContainer" class="drawer__cart"><p class="appear-delay-3">Your cart is currently empty.</p></div>
+            </div>
+        </div>
+    
+        <div>
+            <div class="header-wrapper header-wrapper--overlay is-light animateIn" id='nav_bar'>
+                <div class="site-header-sticky" style="height: 103.797px;">
+
+                    <!--Start: Header-->
+                    <header class="site-header">
+                        <div class="page-width">
+                            <div class="header-layout header-layout--left-drawer" >
+
+                                <!--Start: Logo-->
+                                <div class="header-item header-item--logo">
+                                    <h1 class="site-header__logo">
+                                        <span class="visually-hidden">Blue Origin Shop</span>
+    
+                                        <a href="/" class="site-header__logo-link logo--has-inverted">
+                                            <img
+                                                class="small--hide"
+                                                src="assets/images/shoplogo_270x.png"                                                
+                                                alt="Blue Origin Shop"
+                                            />
+                                            <img
+                                                class="medium-up--hide"
+                                                src="assets/images/shoplogo_140x.png"                                               
+                                                alt="Blue Origin Shop"
+                                            />
+                                        </a>
+    
+                                        <a href="/" class="site-header__logo-link logo--inverted">
+                                            <img
+                                                class="small--hide"
+                                                src="assets/images/shoplogo_270x.png"                                                
+                                                alt="Blue Origin Shop"
+                                                
+                                            />
+                                            <img
+                                                class="medium-up--hide"
+                                                src="assets/images/shoplogo_140x.png"                                                
+                                                alt="Blue Origin Shop"
+                                            />
+                                        </a>
+                                    </h1>
+                                </div>
+                                <!--End: Logo-->
+
+    
+                                <!--Start: Menu Icons-->
+                                <div class="header-item header-item--icons">
+                                    <div class="site-nav site-nav--icons">
+                                        <div class="site-nav__icons">
+                                            <a class="site-nav__link site-nav__link--icon medium-down--hide" href="#">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewBox="0 0 64 64">
+                                                    <path d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.41 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.75 2.7 9.51 6 11.41v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z"></path>
+                                                </svg>
+                                                <span class="icon__fallback-text">
+                                                    Log in
+                                                </span>
+                                            </a>
+    
+                                            <a href="#" class="site-nav__link site-nav__link--icon">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
+                                                    <path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
+                                                </svg>
+                                                <span class="icon__fallback-text">Search</span>
+                                            </a>
+                                            <button type="button" class="site-nav__link site-nav__link--icon" id="slideMenu">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path d="M7 15h51M7 32h43M7 49h51"></path></svg>
+                                                <span class="icon__fallback-text">Site navigation</span>
+                                            </button>
+    
+                                            <a href="#" class="site-nav__link site-nav__link--icon">
+                                                <span class="cart-link">
+                                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 64 64">
+                                                        <path d="M14 17.44h46.79l-7.94 25.61H20.96l-9.65-35.1H3"></path>
+                                                        <circle cx="27" cy="53" r="2"></circle>
+                                                        <circle cx="47" cy="53" r="2"></circle>
+                                                    </svg>
+                                                    <span class="icon__fallback-text">Cart</span>
+                                                    <span class="cart-link__bubble"></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End: Menu Icons-->
+
+                            </div>
+                        </div>
+
+                        <!--Start: Header Search-->
+                        <div class="site-header__search-container">
+                            <div class="site-header__search">
+                                <div class="page-width">
+                                    <form action="" method="get" class="site-header__search-form" role="search">
+                                       
+                                        <button type="submit" class="text-link site-header__search-btn">
+                                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
+                                                <path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
+                                            </svg>
+                                            <span class="icon__fallback-text">Search</span>
+                                        </button>
+                                        <input type="search" name="q" value="" placeholder="Search our store" class="site-header__search-input" aria-label="Search our store" />
+                                    </form>
+                                    <button type="button" class="text-link site-header__search-btn">
+                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+                                        <span class="icon__fallback-text">"Close (esc)"</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End: Header Search-->
+
+
+                    </header>
+                    <!--End: Header Search-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End: Header wrapper -->
+
+
+    
+    <!--Start: Main Content -->
+    <main class="main-content">
+        <!-- BEGIN content_for_index -->
+        <div class="index-section--hero">
+            <div class="video-parent-section hero hero--450px hero--mobile--250px loaded">
+                <div class="hero__media">
+                    <img src="assets/images/men/men-bg.webp" />                    
+                </div>
+    
+                <div class="hero__text-wrap">
+                    <div class="page-width">
+                        <div class="hero__text-content vertical-center horizontal-center">
+                            <h2 class="h1 hero__title">
+                                <div class="animation-cropper">
+                                    <div class="animation-contents">
+                                        <!-- <img src="assets/images/shop-logo-bolder.png" alt="BLUE ORIGIN SHOP" width="700" /> -->
+                                        <h1>MENS</h1>
+                                    </div>
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="catmenu-bg">
+                <ul class="cat-menu">
+                    <li class="pageActive"><a href="men.html">MENS</a></li>
+                    <!-- <li><a href="women.html">WOMENS</a></li>
+                    <li><a href="kids.html">KIDS</a></li>
+                    <li><a href="accessories.html">ACCESSORIES</a></li>
+                    <li><a href="club.html">CLUB FOR THE FUTURE</a></li>
+                    <li><a href="new-shepard.html">NEW SHEPARD</a></li>
+                    <li><a href="new.html"><b>NEW</b></a></li> -->
+                </ul>
+            </div>
+    
+            <div class="page-width page-content">
+            <div data-section-id="" data-section-type="collection-template">
+                <div class="grid grid--uniform">
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M1&price=$26.95&title=NewJackson Tee mockup&img=assets/images/men/NewJackson-Tee-mockup.webp" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/NewJackson-Tee-mockup.webp');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title" data-id="NewJackson">NewJackson Tee mockup</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $26.95
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M2&price=$74&title=Ogio Hoodie&img=assets/images/men/ogio-hoodie-655653.webp" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/ogio-hoodie-655653.webp');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title">Ogio Hoodie</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $74
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M3&price=$49.95&title=Mens Quilted Flannel&img=assets/images/men/mens-quilted-flannel-172619.webp" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/mens-quilted-flannel-172619.webp');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title">Mens Quilted Flannel</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $49.95
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M4&price=$74&title=Mens Quilted Snap Pullover&img=assets/images/men/mens-quilted-snap-pullover-231322.webp" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/mens-quilted-snap-pullover-231322.webp');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title">Mens Quilted Snap Pullover</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $74
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M5&price=$21.95&title=Mens Blue Feather Logo Tee&img=assets/images/men/mens-blue-feather-logo-tee-946642.webp" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/mens-blue-feather-logo-tee-946642.webp');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title">Mens Blue Feather Logo Tee</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $21.95
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M6&price=$16.99&title=For the benefit of Earth Tee&img=assets/images/men/for-the-benefit-of-earth-tee-836455.webp" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/for-the-benefit-of-earth-tee-836455.webp');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title">For the benefit of Earth Tee</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $16.99
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M7&price=$19.95&title=Mens Charcoal Heavy Duty Logo Tee&img=assets/images/men/mens-charcoal-heavy-duty-logo-tee-850803.jpg" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/mens-charcoal-heavy-duty-logo-tee-850803.jpg');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title">Mens Charcoal Heavy Duty Logo Tee</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $19.95
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M8&price=$39.35&title=Royal Work Shirt&img=assets/images/men/royal-work-shirt-757687.webp" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/royal-work-shirt-757687.webp');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title">Royal Work Shirt</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $39.35
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M9&price=$394.95&title=Unisex Astronaut Crew Bomber Jackets&img=assets/images/men/unisex-astronaut-crew-bomber-jackets-366529.webp" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/unisex-astronaut-crew-bomber-jackets-366529.webp');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title">Unisex Astronaut Crew Bomber Jackets</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $394.95
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M10&price=$69.65&title=Blue Origin Royal Hoodie&img=assets/images/men/blue-origin-royal-hoodie-351421.webp" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/blue-origin-royal-hoodie-351421.webp');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title">Blue Origin Royal Hoodie</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $69.65
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M11&price=$64.65&title=Mens-Techno-Light-3 Layer Jacket Black&img=assets/images/men/mens-techno-light-3-layer-jacket-black-900075.webp" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/mens-techno-light-3-layer-jacket-black-900075.webp');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title">Mens-Techno-Light-3 Layer Jacket Black</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $64.65
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid__item grid-product medium-up--one-quarter small--one-half aos-init aos-animate"
+                        data-aos="row-of-">
+                        <div class="grid-product__content">
+                            <a href="product.html?id=M12&price=$19.95&title=Mens Black Heavy Duty Feather Logo Tee&img=assets/images/men/mens-black-heavy-duty-feather-logo-tee-355021.webp" class="grid-product__link">
+                                <div class="grid-product__image-mask">
+                                    <div class="grid__image-ratio grid__image-ratio--square lazyloaded"
+                                        style="background-image: url('assets/images/men/mens-black-heavy-duty-feather-logo-tee-355021.webp');">
+
+                                    </div>
+                                </div>
+
+                                <div class="grid-product__meta">
+                                    <div class="grid-product__title">Mens Black Heavy Duty Feather Logo Tee</div>
+
+                                    <div class="grid-product__price">
+                                        <span>
+                                            $19.95
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+        <!-- END content_for_index -->
+
+    </main>
+    <!--Start: Main Content -->
+
+
+    <!--Start: Footer -->
+    <div>
+        <footer class="site-footer">
+            <div class="page-width">
+                <div class="grid">
+                    <div class="grid__item small--hide footerItemLeft">
+                        <div class="footer__logo-social">
+                            <div class="footer__logo">
+                                <a href="/">
+                                    <img src="assets/images/Simple_White_x91@2x.png" alt="Blue Origin Shop" />
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+    
+                    <div class="grid__item footerItemRight">
+                        <p class="footer__title small--hide">Contact</p>
+                        <button type="button" class="footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide" aria-expanded="false">
+                            Contact
+                            <span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4px" stroke="#FFFFFF" fill="none" fill-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                        </button>
+    
+                        <div class="collapsible-content collapsible-content--small">
+                            <div class="collapsible-content__inner">
+                                <div class="footer__collapsible">
+                                    <p>
+                                        <a href="mailto:shop@blueorigin.com" title="mailto:shop@blueorigin.com">shop@blueorigin.com</a><br />
+                                        <br />
+                                    </p>
+                                    <p>
+                                        <a href="#" title="Privacy Policy">Privacy Policy</a><br />
+                                        <a href="#" title="Terms of Use">Terms of Use</a> <br />
+                                        <a href="#" title="Returns &amp; Exchanges">Refunds &amp; Exchanges</a><br />
+                                        <a href="#" title="Do not sell my personal information">Do Not Sell My Information</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    
+                    <div class="footer__clear small--hide"></div>
+    
+                    <div class="grid__item footer__item footerItemLeft">
+                        <div>
+                            <div class="collapsible-content__inner">
+                                <div class="footer__collapsible footer_collapsible--disabled">
+                                    <p>
+                                        For questions or concerns please contact customer service <a href="mailto:shop@blueorigin.com" title="mailto:shop@blueorigin.com" class="js-no-transition">shop@blueorigin.com</a><br />
+                                        Please allow up to 2 business days for response.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    
+                    <div class="grid__item footer__item footerItemSignup">
+                        <p class="footer__title small--hide">Sign up and save</p>
+                        <button type="button" class="footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide" aria-expanded="false">
+                            Sign up and save
+                            <span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="4px" stroke="#FFFFFF" fill="none" fill-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                        </button>
+    
+                        <div class="collapsible-content collapsible-content--small">
+                            <div class="collapsible-content__inner">
+                                <div class="footer__collapsible">
+                                    <p></p>
+                                    <p>Subscribe to get exclusive offers and hear first about new additions to the Blue Origin Shop.</p>
+                                    <p></p>
+    
+                                    <form method="post" action="" id="newsletter-footer" class="contact-form">
+                                        
+                                        <label for="Email" class="hidden-label">Enter your email</label>                                        
+                                        <div class="footer__newsletter">
+                                            <input type="email" value="" placeholder="Enter your email" name="contact[email]" id="Email" class="footer__newsletter-input" autocorrect="off" autocapitalize="off" />
+                                            <button type="submit" class="footer__newsletter-btn" aria-label="Click to Sign Up" name="commit">
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-email" viewBox="0 0 64 64">
+                                                    <path d="M63 52H1V12h62zM1 12l25.68 24h9.72L63 12M21.82 31.68L1.56 51.16m60.78.78L41.27 31.68" stroke="#FFFFFF" fill="none" stroke-width="4px"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="grid__item medium-up--hide">
+                        <div class="footer__logo-social">                            
+                            <div class="footer__logo">
+                                <a href="/">
+                                    <img src="assets/images//Simple_White_x91@2x.png" alt="Blue Origin Shop" />
+                                </a>
+                            </div>
+    
+                            <ul class="no-bullets footer__social"></ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class="footer__copyright">
+                    © 2021 Blue Origin Shop | All Rights Reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!--End: Footer -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
