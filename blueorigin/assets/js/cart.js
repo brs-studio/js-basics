@@ -98,8 +98,10 @@ function quantityChanged(e) {
 function updateCartTotal() {
   let cartTotal = 0;
   const cartRows = document.getElementsByClassName("cart-row");
+  console.log(cartRows);
   for (let i = 0; i < cartRows.length; i++) {
     let cartRow = cartRows[i];
+    console.log(cartRow);
     const priceElement =
       cartRow.getElementsByClassName("cart-title")[0].children[1].innerText;
     const qtyElement = cartRow.getElementsByClassName("cart-quantity-input")[0];
