@@ -1,0 +1,27 @@
+#cart-notification-container {
+    width: 250px;
+    height: 250px;
+    background-color: #0333dd;
+    color: white;
+    position: fixed;
+    right: 10px;
+    z-index: 10;
+    top: 105px;
+    display: none;
+  }
+  
+  #cart-notification-container span {
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .cart-notification-content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #cart-notification-container a {
+    display: block;
+    text-align: center;
+  }
