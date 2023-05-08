@@ -1,274 +1,274 @@
-// let products = [
-//   {
-//     id: "M1",
-//     title: "O",
-//     price: "$30.00",
-//     img: "assets/img/t-shirt-1.png",
-//   },
-//   {
-//     id: "M2",
-//     title: "T",
-//     price: "$30.00",
-//     img: "assets/img/t-shirt-2.png",
-//   },
-//   {
-//     id: "M3",
-//     title: "P",
-//     price: "$55.00",
-//     img: "assets/img/t-shirt-3.png",
-//   },
-//   {
-//     id: "M5",
-//     title: "Q",
-//     price: "$30.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M4",
-//     title: "S",
-//     price: "$45.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M6",
-//     title: "R",
-//     price: "$15.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M7",
-//     title: "G",
-//     price: "$98",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M8",
-//     title: "H",
-//     price: "$25.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M9",
-//     title: "F",
-//     price: "$60",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M10",
-//     title: "I",
-//     price: "$32.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M11",
-//     title: "E",
-//     price: "$19.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M12",
-//     title: "J",
-//     price: "$55",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M13",
-//     title: "D",
-//     price: "$60.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M14",
-//     title: "K",
-//     price: "$70.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M15",
-//     title: "L",
-//     price: "$60.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M16",
-//     title: "M",
-//     price: "$65.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M17",
-//     title: "N",
-//     price: "$80.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M18",
-//     title: "A",
-//     price: "$50.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M19",
-//     title: "C",
-//     price: "$14.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-//   {
-//     id: "M20",
-//     title: "B",
-//     price: "$56.00",
-//     img: "assets/img/t-shirt-4.png",
-//   },
-// ];
-
 let products = [
-    {
-      id: "M1",
-      title: "MEN'S SPACEX WHITE T-SHIRT",
-      price: "$30.00",
-      img: "assets/img/t-shirt-1.png",
-    },
-    {
-      id: "M2",
-      title: "OCCUPY MARS T-SHIRT",
-      price: "$30.00",
-      img: "assets/img/t-shirt-2.png",
-    },
-    {
-      id: "M3",
-      title: "MEN'S FALCON T-SHIRT",
-      price: "$55.00",
-      img: "assets/img/t-shirt-3.png",
-    },
-    {
-      id: "M5",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$30.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M4",
-      title: "MEN'S CREW DRAGON SCHEMATIC T-SHIRT",
-      price: "$45.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M6",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$15.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M7",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$98",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M8",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$25.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M9",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$60",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M10",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$32.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M11",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$19.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M12",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$55",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M13",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$60.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M14",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$70.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M15",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$60.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M16",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$65.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M17",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$80.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M18",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$50.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M19",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$14.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-    {
-      id: "M20",
-      title: "MEN'S SPACEX T-SHIRT 4",
-      price: "$56.00",
-      img: "assets/img/t-shirt-4.png",
-    },
-  ];
+  {
+    id: "M1",
+    title: "Cap Dragon",
+    price: "$16.00",
+    img: "assets/img/men/Cap_Dragon_Black_FRONT.jpg",
+    size: "2X",
+    color: "white",
+    type: "hat",
+  },
+  {
+    id: "M2",
+    title: "Cap FH Black",
+    price: "$20.00",
+    img: "assets/img/men/Cap_FH_Black_00000348_FRONT.jpg",
+    size: "S",
+    color: "black",
+    type: "hat",
+  },
+  {
+    id: "M3",
+    title: "Cap SpaceX Black",
+    price: "$33.00",
+    img: "assets/img/men/Cap_SpaceX_Black_0001082015_FRONT.jpg",
+    size: "M",
+    color: "black",
+    type: "hat",
+  },
+  {
+    id: "M4",
+    title: "HEATSHIELD_HOODIE_MENS_MEDIUM_BACK",
+    price: "$45.00",
+    img: "assets/img/men/HEATSHIELD_HOODIE_MENS_MEDIUM_BACK.jpg",
+    size: "M",
+    color: "white",
+    type: "tshirt",
+  },
+  {
+    id: "M5",
+    title: "MENS-43-POLO-T-SHIRT-BLACK-FRONT",
+    price: "$30.00",
+    img: "assets/img/men/MENS-43-POLO-T-SHIRT-BLACK-FRONT.jpg",
+    size: "S",
+    color: "black",
+    type: "tshirt",
+  },
+  {
+    id: "M6",
+    title: "MENS-CREW-DRAGONSCHEMATIC-CHARCOAL",
+    price: "$67.00",
+    img: "assets/img/men/MENS-CREW-DRAGONSCHEMATIC-CHARCOAL-BACK.jpg",
+    size: "S",
+    color: "grey",
+    type: "tshirt",
+  },
+  {
+    id: "M7",
+    title: "MENS-DRAGON-HEATHERGRAY-BACK",
+    price: "$98",
+    img: "assets/img/men/MENS-DRAGON-HEATHERGRAY-BACK.jpg",
+    size: "M",
+    color: "white",
+    type: "tshirt",
+  },
+  {
+    id: "M8",
+    title: "MENS-F9-T-SHIRT-BLACK-BACK",
+    price: "$25.00",
+    img: "assets/img/men/MENS-F9-T-SHIRT-BLACK-BACK.jpg",
+    size: "L",
+    color: "black",
+    type: "tshirt",
+  },
+  {
+    id: "M9",
+    title: "MENS-FALCON-HEAVY-CHARCOAL-BACK",
+    price: "$62",
+    img: "assets/img/men/MENS-FALCON-HEAVY-CHARCOAL-BACK.jpg",
+    size: "2XL",
+    color: "black",
+    type: "tshirt",
+  },
+  {
+    id: "M10",
+    title: "MENS-NUKEMARS-CHARCOAL-FRONT",
+    price: "$32.00",
+    img: "assets/img/men/MENS-NUKEMARS-CHARCOAL-FRONT.jpg",
+    size: "3XL",
+    color: "black",
+    type: "tshirt",
+  },
+  {
+    id: "M11",
+    title: "MENS-oocupymars-black-FRONT",
+    price: "$19.00",
+    img: "assets/img/men/MENS-oocupymars-black-FRONT.jpg",
+    size: "M",
+    color: "black",
+    type: "tshirt",
+  },
+  {
+    id: "M12",
+    title: "MENS-SPACEXLOGO-HEATHERGRAY-BACK",
+    price: "$55",
+    img: "assets/img/men/MENS-SPACEXLOGO-HEATHERGRAY-BACK.jpg",
+    size: "L",
+    color: "white",
+    type: "tshirt",
+  },
+  {
+    id: "M13",
+    title: "MENS-starman-black-FRONT",
+    price: "$74.00",
+    img: "assets/img/men/MENS-starman-black-FRONT.jpg",
+    size: "3XL",
+    color: "black",
+    type: "tshirt",
+  },
+  {
+    id: "M14",
+    title: "MicrosoftTeams-image",
+    price: "$33.00",
+    img: "assets/img/men/MicrosoftTeams-image.jpg",
+    size: "S",
+    color: "white",
+    type: "hat",
+  },
+  {
+    id: "M15",
+    title: "Mug_Occupy_Mars_SPXTERRAMUG_FRONT",
+    price: "$25.00",
+    img: "assets/img/men/Mug_Occupy_Mars_SPXTERRAMUG_FRONT.jpg",
+    size: "15-oz",
+    color: "white",
+    type: "cup",
+  },
+  {
+    id: "M16",
+    title: "NewRBFFHandFairing_400x",
+    price: "$65.00",
+    img: "assets/img/men/NewRBFFHandFairing_400x.jpg",
+    size: "3XL",
+    color: "black",
+    type: "chain",
+  },
+  {
+    id: "M17",
+    title: "RAPTOR_SCHEMATIC_SHIRT_MENS_LARGE_BACK",
+    price: "$80.00",
+    img: "assets/img/men/RAPTOR_SCHEMATIC_SHIRT_MENS_LARGE_BACK.jpg",
+    size: "L",
+    color: "brown",
+    type: "tshirt",
+  },
+  {
+    id: "M18",
+    title: "SPACEX_0402230602",
+    price: "$50.00",
+    img: "assets/img/men/SPACEX_0402230602.jpg",
+    size: "L",
+    color: "grey",
+    type: "tshirt",
+  },
+  {
+    id: "M19",
+    title: "SpaceX_Bottle_Front",
+    price: "$14.00",
+    img: "assets/img/men/SpaceX_Bottle_Front.jpg",
+    size: "1L",
+    color: "black",
+    type: "bottle",
+  },
+  {
+    id: "M20",
+    title: "SPACEX_JOURNAL_front",
+    price: "$56.00",
+    img: "assets/img/men/SPACEX_JOURNAL_front.jpg",
+    size: "5.25x8.25",
+    color: "black",
+    type: "journal",
+  },
+  {
+    id: "M21",
+    title: "StarshipStackPosterv2",
+    price: "$22.00",
+    img: "assets/img/men/StarshipStackPosterv2.jpg",
+    size: "18x24",
+    color: "grey",
+    type: "poster",
+  },
+  {
+    id: "M22",
+    title: "STARSHIPTESTFLIGHT_MENS-T-SHIRT-BLACK-BACK",
+    price: "$80.00",
+    img: "assets/img/men/STARSHIPTESTFLIGHT_MENS-T-SHIRT-BLACK-BACK.jpg",
+    size: "3X",
+    color: "black",
+    type: "tshirt",
+  },
+  {
+    id: "M23",
+    title: "STICKER-PACK",
+    price: "$25.00",
+    img: "assets/img/men/STICKER-PACK-ALT1.jpg",
+    size: "23.5x35.5",
+    color: "grey",
+    type: "poster",
+  },
+  {
+    id: "M24",
+    title: "UNISEX_DRAGON_ZIPPER_SMARTEX_GRAY_BACK",
+    price: "$61.00",
+    img: "assets/img/men/UNISEX_DRAGON_ZIPPER_SMARTEX_GRAY_BACK.jpg",
+    size: "3X",
+    color: "white",
+    type: "tshirt",
+  },
+  {
+    id: "M25",
+    title: "UNISEX_F9_LS_T_SHIRT_BLACK_BACK",
+    price: "$36.00",
+    img: "assets/img/men/UNISEX_F9_LS_T_SHIRT_BLACK_BACK.jpg",
+    size: "L",
+    color: "black",
+    type: "tshirt",
+  },
+  {
+    id: "M26",
+    title: "UNISEX_SPACEX_PULLOVER_BEIMAR_BLACK_BACK",
+    price: "$56.00",
+    img: "assets/img/men/UNISEX_SPACEX_PULLOVER_BEIMAR_BLACK_BACK.jpg",
+    size: "M",
+    color: "black",
+    type: "tshirt",
+  },
+];
 
-
+// Init
 let itemsPerPage = 5;
 let currentPage = 1;
 let sortby = "name-asc";
+let productType = "all";
+let productColor = "all";
+let productSize = "all";
+let filteredProducts = [];
+let filters = {};
 
+// DOM Elements
 const selectItemsPerPage = document.getElementById("items-per-page");
-selectItemsPerPage.addEventListener("change", (e) => {
-  if (e.target.value === "") {
-    return;
-  }
-  itemsPerPage = Number(e.target.value);
-  currentPage = 1;
-  displayProducts();
-  displayPagination();
-});
+const productSelectElement = document.getElementById("product-type");
+const productSizeSelectElement = document.getElementById("product-size");
+const productColorElement = document.getElementById("product-color");
 
-function displayProducts() {
-  console.log(currentPage);
+const productsizes = {
+  tshirt:["All", "S", "M", "L", "2X", "2XL", "3X", "3XL"],
+  hat: [],
+  poster: ["All","18x24", "23.5x35.5"],
+  journal: ["All", "5.25x8.25"],
+  bottle: ["All", "1L", "2L"],
+  chain: [],
+  cup: ["All", "15-oz", "20-oz"],
+  all:["All", "S", "M", "L", "2X", "2XL", "3X", "3XL","18x24", "23.5x35.5","5.25x8.25","1L", "2L","15-oz", "20-oz"]
+};
+
+function displayProducts(productItemsArr) {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const productListDiv = document.getElementById("product-list");
   productListDiv.innerHTML = "";
-  console.log(products);
-  for (let i = startIndex; i < endIndex && i < products.length; i++) {
-    const product = products[i];
+  for (let i = startIndex; i < endIndex && i < productItemsArr.length; i++) {
+    const product = productItemsArr[i];
     const productDiv = document.createElement("div");
     productDiv.classList.add("col-lg-3", "col-md-4", "col-6");
     productDiv.innerHTML = `
@@ -291,8 +291,8 @@ function displayProducts() {
   }
 }
 
-function displayPagination() {
-  const totalPages = Math.ceil(products.length / itemsPerPage);
+function displayPagination(productItemsArr) {
+  const totalPages = Math.ceil(productItemsArr.length / itemsPerPage);
   const paginationDiv = document.getElementById("pagination");
   paginationDiv.innerHTML = "";
   for (let i = 1; i <= totalPages; i++) {
@@ -300,7 +300,7 @@ function displayPagination() {
     li.classList.add("page-item");
     const anchor = document.createElement("a");
     anchor.innerText = i;
-    anchor.href = "#"
+    anchor.href = "#";
     anchor.classList.add("page-link");
     li.appendChild(anchor);
     if (i === currentPage) {
@@ -309,8 +309,8 @@ function displayPagination() {
     }
     li.addEventListener("click", () => {
       currentPage = i;
-      displayProducts();
-      displayPagination();
+      displayProducts(productItemsArr);
+      displayPagination(productItemsArr);
     });
     paginationDiv.appendChild(li);
   }
@@ -323,9 +323,9 @@ function scrollToTop() {
   });
 }
 
-function sortProducts(sortBy) {
+function sortProducts(sortBy, arr) {
   if (sortBy === "name-asc") {
-    products.sort(function (a, b) {
+    arr.sort(function (a, b) {
       const titleA = a.title.toUpperCase();
       const titleB = b.title.toUpperCase();
       if (titleA < titleB) {
@@ -336,10 +336,10 @@ function sortProducts(sortBy) {
       }
       return 0;
     });
-    return products;
+    return arr;
   }
   if (sortBy === "name-desc") {
-    products.sort(function (a, b) {
+    arr.sort(function (a, b) {
       const titleA = a.title.toUpperCase();
       const titleB = b.title.toUpperCase();
       if (titleA < titleB) {
@@ -350,34 +350,148 @@ function sortProducts(sortBy) {
       }
       return 0;
     });
-    return products;
+    return arr;
   }
   if (sortBy === "price-asc") {
-    products.sort((a, b) => {
+    arr.sort((a, b) => {
       const priceA = Number(a.price.slice(1));
       const priceB = Number(b.price.slice(1));
       return priceA - priceB;
     });
-    return products;
+    return arr;
   }
   if (sortBy === "price-desc") {
-    products.sort((a, b) => {
+    arr.sort((a, b) => {
       const priceA = Number(a.price.slice(1));
       const priceB = Number(b.price.slice(1));
       return priceB - priceA;
     });
-    return products;
+    return arr;
   }
 }
 
-document.getElementById("sort-by").addEventListener("change", (e) => {
-  console.log(e.target.value);
-  const sortedProducts = sortProducts(e.target.value);
-  products = sortedProducts;
-  displayProducts();
+// Function to filter products by price range
+function filterByPrice(products, minPrice, maxPrice) {
+  return products.filter((product) => {
+    const removeDollarSign = product.price.replace(/\$/g, "");
+    const productPrice = parseFloat(removeDollarSign);
+    return productPrice >= minPrice && productPrice <= maxPrice;
+  });
+}
+
+// Event Listener for items per page
+selectItemsPerPage.addEventListener("change", (e) => {
+  if (e.target.value === "") {
+    return;
+  }
+  if (filteredProducts.length > 0) {
+    itemsPerPage = Number(e.target.value);
+    currentPage = 1;
+    displayProducts(filteredProducts);
+    displayPagination(filteredProducts);
+    return;
+  }
+  itemsPerPage = Number(e.target.value);
+  currentPage = 1;
+  displayProducts(products);
+  displayPagination(products);
 });
 
-sortProducts(sortby);
-displayProducts();
-displayPagination();
+// Event Listener for sort by
+document.getElementById("sort-by").addEventListener("change", (e) => {
+  sortby = e.target.value;
+  if (filteredProducts.length > 0) {
+    const sortedProducts = sortProducts(sortby, filteredProducts);
+    filteredProducts = sortedProducts;
+    displayProducts(filteredProducts);
+    displayPagination(filteredProducts);
+    return;
+  }
+  const sortedProducts = sortProducts(sortby, products);
+  products = sortedProducts;
+  displayProducts(products);
+});
 
+document.getElementById("product-type").addEventListener("change", (e) => {
+  productType = e.target.value;
+  delete filters.size;
+  if (productType === "all") {
+    delete filters.type;
+    filteredItems(products);
+    initProductSize();
+    return;
+  }
+  filters.type = e.target.value;
+  filteredItems(products);
+  initProductSize();
+});
+
+document.getElementById("product-color").addEventListener("change", (e) => {
+  productColor = e.target.value;
+  if (productColor === "all") {
+    delete filters.color;
+    filteredItems(products);
+    return;
+  }
+  filters.color = e.target.value;
+  filteredItems(products);
+});
+
+document.getElementById("product-size").addEventListener("change", (e) => {
+    productSize = e.target.value;
+  if (productSize === "All") {
+    delete filters.size;
+    filteredItems(products);
+    return;
+  }
+  filters.size = e.target.value;
+  filteredItems(products);
+});
+
+// filter function that filters the products based on the filter params passed
+function filteredItems(items) {
+  const filteredItems = items.filter((product) => {
+    for (let key in filters) {
+      if (product[key] === undefined || product[key] != filters[key])
+        return false;
+    }
+    return true;
+  });
+  filteredProducts = filteredItems;
+  currentPage = 1;
+  displayProducts(filteredItems);
+  displayPagination(filteredItems);
+  return;
+}
+
+function initProductSize() {
+  productSizeSelectElement.disabled = false;
+  const selectedProduct = productSelectElement.value;
+  const productSizes = productsizes[selectedProduct];
+  if (productSizes.length > 1) {
+    // Remove previous city options
+    productSizeSelectElement.innerHTML = "";
+    // Create new city options based on country
+    productSizes.forEach((size) => {
+      const option = document.createElement("option");
+      option.value = size;
+      option.textContent = size;
+      productSizeSelectElement.appendChild(option);
+    });
+  } else {
+    productSizeSelectElement.disabled = true;
+  }
+}
+
+// Init Functions
+sortProducts(sortby, products);
+displayProducts(products);
+displayPagination(products);
+initProductSize();
+
+// set default value as (0 - selected index) for the product type, color and size
+window.addEventListener('load', function() {
+  productSelectElement.selectedIndex = 0;
+  productSizeSelectElement.selectedIndex = 0;
+  productColorElement.selectedIndex = 0;
+})
