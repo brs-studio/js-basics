@@ -184,7 +184,6 @@
         </div>
 
         <!-- Start:Cart List -->
-
         <!-- Start:Estimator -->
         <div class="row">
           <div class="col-md-12">
@@ -194,37 +193,53 @@
               </h2>
 
               <div class="row text-start">
-                <div class="col-md-4">
-                  <label for="inputCity" class="form-label">Country</label>
+                <div class="col-md-4 mb-3">
+                  <label for="username" class="form-label">Name</label>
                   <input
                     type="text"
                     class="form-control rounded-0"
-                    id="inputCity"
+                    id="username"
+                    autocomplete="off"
                   />
                 </div>
-                <div class="col-md-3">
-                  <label for="inputState" class="form-label">Province</label>
-                  <select id="inputState" class="form-select rounded-0">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                <div class="col-md-4">
+                  <label for="inputCity" class="form-label">Country</label>
+                  <select
+                    id="countries"
+                    class="form-select"
+                    aria-label="countries"
+                  >
+                    <option value="" disabled selected>Select a Country</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="province" class="form-label">Province</label>
+                  <select id="province" class="form-select rounded-0" disabled>
+                    <option value="" disabled selected>
+                      Select a Province
+                    </option>
                   </select>
                 </div>
                 <div class="col-md-3">
-                  <label for="inputZip" class="form-label">Zip code</label>
-                  <input
-                    type="text"
-                    class="form-control rounded-0"
-                    id="inputZip"
-                  />
+                  <label for="city" class="form-label">City</label>
+                  <select
+                    id="city"
+                    class="form-select"
+                    aria-label="city"
+                    disabled
+                  >
+                    <option value="" disabled selected>Select a City</option>
+                  </select>
                 </div>
 
                 <div class="col-2">
                   <label>&nbsp;</label>
                   <button
+                    id="signup"
                     type="submit"
                     class="btn btn-dark btn-lg rounded-0 btn-block w-100 mt-2"
                   >
-                    Sign in
+                    Sign Up
                   </button>
                 </div>
               </div>
@@ -291,6 +306,7 @@
 
     <!--Cart logic script  -->
     <script src="assets/js/cart.js"></script>
+    <script src="assets/js/country.js"></script>
 
     <!-- Plus minu for range selector -->
     <script>
