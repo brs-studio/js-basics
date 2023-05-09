@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>JS Components</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="js/wordcloud.js"></script>
+        <script src="js/lang/lang.en.js"></script>
+    </head>
+    <body class="sb-nav-fixed" onload="loadWordCloud()">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">JS Components</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <a class="nav-link" href="list.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Service Requests
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Service Requests</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Manage Service Requests</li>
+                        </ol>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class='col-10'>
+                                        <i class="fas fa-table me-1"></i>
+                                        <div class="btn pe-none">Service Requests List</div>
+                                    </div>
+                                    <div class='col-2 text-right'>
+                                        <a class="text-decoration-none btn btn-outline-primary px-4 py-1" role="button" href="create.html"><i class="fas fa-plus me-1"></i> Create</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>SR ID</th>
+                                            <th>Priority</th>
+                                            <th>Problem Summary</th>
+                                            <th>Status</th>
+                                            <th>Customer</th>
+                                            <th>Acc No</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>SR ID</th>
+                                            <th>Priority</th>
+                                            <th>Problem Summary</th>
+                                            <th>Status</th>
+                                            <th>Customer</th>
+                                            <th>Acc No</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="view.html">e42792d7-e5d5-4df1-8344-7eba361594f3</a></td>
+                                            <td>Low</td>
+                                            <td>Testing MSR 2nd</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">01ecb943-7b7e-446b-97fa-a505d7c7f829</a></td>
+                                            <td>High</td>
+                                            <td>QA testing on 11-9</td>
+                                            <td>Open</td>
+                                            <td>M29030 CLB 4 CLR 3 3D MLG</td>
+                                            <td>UIC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">e992d00d-9259-4718-ad44-16b5644cac0d</a></td>
+                                            <td>High</td>
+                                            <td>Another test from EBS</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">8ce581b4-7ce2-4e04-af04-04e7da6ba30e</a></td>
+                                            <td>High</td>
+                                            <td>FUEL INJECTION PUMP STICKS</td>
+                                            <td>SHT PART</td>
+                                            <td>M29030 CLB 4 CLR 3 3D MLG</td>
+                                            <td>UIC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">dd749963-1d13-4004-981d-4d087cab6165</a></td>
+                                            <td>Medium</td>
+                                            <td>Checking SR download from EBS 12/16</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">7f961fe9-f682-4bac-8e30-961ad1781424</a></td>
+                                            <td>High</td>
+                                            <td>Test for DDIL Demo on 10/19</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">b4353c5d-c67f-4eb9-b461-173214c710ed</a></td>
+                                            <td>Medium</td>
+                                            <td>CPU Healthcheck Main Tab Step 8 20191103</td>
+                                            <td>EQUIP ACCEPTED</td>
+                                            <td>M29030 CLB 4 CLR 3 3D MLG</td>
+                                            <td>UIC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">1559ab50-4308-4c8a-b015-b84455c060e8</a></td>
+                                            <td>High</td>
+                                            <td>Test Maintenance CM SR 10172022</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">2e45096f-ee08-4dee-8e78-9489429e4275</a></td>
+                                            <td>High</td>
+                                            <td>Supply type SR</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">5c602669-2e4e-4db8-919f-669938fab798</a></td>
+                                            <td>Medium</td>
+                                            <td>CR187387</td>
+                                            <td>Open</td>
+                                            <td>M29030 CLB 4 CLR 3 3D MLG</td>
+                                            <td>UIC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">3f903c8b-93c7-49de-aeea-74c1f6d7439f</a></td>
+                                            <td>High</td>
+                                            <td>RPLC ALL CAB SHOCKS</td>
+                                            <td>UNIT RCL</td>
+                                            <td>M29030 CLB 4 CLR 3 3D MLG</td>
+                                            <td>UIC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">86cea9fd-deaa-4cff-8e4c-bca439ca6e34</a></td>
+                                            <td>Medium</td>
+                                            <td>CR015594 / CR01477 test E-174 call</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">79b54aab-fbf3-4c03-aa82-8e5f5f982818</a></td>
+                                            <td>Medium</td>
+                                            <td>CR015594/CR001477 Demo SR</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">7657899c-c6dc-47f0-a456-c37c79f24626</a></td>
+                                            <td>Medium</td>
+                                            <td>CPU Healthcheck SECREP Exchange</td>
+                                            <td>EQUIP ACCEPTED</td>
+                                            <td>M29030 CLB 4 CLR 3 3D MLG</td>
+                                            <td>UIC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">97ac69d4-e74a-43bd-9e38-f98c4950dc71</a></td>
+                                            <td>Medium</td>
+                                            <td>CR002026  Test</td>
+                                            <td>Open</td>
+                                            <td>M29030 CLB 4 CLR 3 3D MLG</td>
+                                            <td>UIC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">d1392180-af37-476f-9383-a27e0e268eb3</a></td>
+                                            <td>High</td>
+                                            <td>test Prob Sum 9/7 2nd</td>
+                                            <td>Approved</td>
+                                            <td>M29030 CLB 4 CLR 3 3D MLG</td>
+                                            <td>UIC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">d4c7286a-7bdb-4767-a59c-eb58e37bb42f</a></td>
+                                            <td>High</td>
+                                            <td>M29030 Sridhar Test1</td>
+                                            <td>Open</td>
+                                            <td>M29030 CLB 4 CLR 3 3D MLG</td>
+                                            <td>UIC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">ba3f1af6-e6e0-4a34-b7bb-9a318b728f20</a></td>
+                                            <td>High</td>
+                                            <td>test by Sridhar for happy path1</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">77c3e233-892e-4754-8cac-5154a9a52754</a></td>
+                                            <td>High</td>
+                                            <td>NEW SR for qa</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">9a46f045-ef19-4a3b-9465-29ac81c8a905</a></td>
+                                            <td>High</td>
+                                            <td>Maintenance needed for repair.</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">ae22bcc9-2369-4ec0-be58-9c52b0510f57</a></td>
+                                            <td>High</td>
+                                            <td>Sorting test</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">e41633e4-c0ed-4f5b-8dfa-cd660788dec1</a></td>
+                                            <td>High</td>
+                                            <td>SR to check Route</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">5cc66464-d830-4f93-9f60-6a4a132aee39</a></td>
+                                            <td>Low</td>
+                                            <td>Testing for Op Status Update 11/9</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">d0308f2d-ba6a-461b-93a2-a9834ed32126</a></td>
+                                            <td>High</td>
+                                            <td>Test SR sync from QA</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">098e53cf-b575-485a-a23e-9201b2937fab</a></td>
+                                            <td>High</td>
+                                            <td>asdf</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">8bedb8b8-9343-41d2-a014-1d8166d36a70</a></td>
+                                            <td>High</td>
+                                            <td>summary</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">0cd690d1-c124-4fee-8993-23f9cb0a2d3e</a></td>
+                                            <td>High</td>
+                                            <td>SR2 with Op Minor Edited</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">0df159c1-6b3e-4b96-8fc0-c1edf47d7ef1</a></td>
+                                            <td>Low</td>
+                                            <td>Testing new SR update from Child level for Op Status.</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">b13e96dd-57c0-4635-968d-5949269b395b</a></td>
+                                            <td>High</td>
+                                            <td>Test EBS Service</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">4b980ebb-e5cf-4f24-8e34-46cfc618297d</a></td>
+                                            <td>High</td>
+                                            <td>New SR to check for Op Status update from child to Parent.</td>
+                                            <td>Working</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">4dcf9a34-c562-4250-b5da-613c9e5bb50e</a></td>
+                                            <td>High</td>
+                                            <td>Service type SR</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">ff1a0a43-4ca0-45cd-a762-dab005d8c322</a></td>
+                                            <td>High</td>
+                                            <td>New SR for 1/25</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">b2944910-7806-43ba-a75d-81311e5545a3</a></td>
+                                            <td>Medium</td>
+                                            <td>Check for Op status update on Parent level</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">8513de71-7060-43c3-bfcb-7712a958532b</a></td>
+                                            <td>High</td>
+                                            <td>SR for Option #3 with Op Minor</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">7af46dd9-961d-4122-a397-e639fd3ceec5</a></td>
+                                            <td>High</td>
+                                            <td>New SR for Option 2 with Op Status Minor</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">0b47ccaf-233c-4567-ab98-d0eaa1129bc3</a></td>
+                                            <td>High</td>
+                                            <td>New SR to check for OP. Status update from Child level</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">973c517e-9cb0-45eb-b2b7-6d98d0250b9d</a></td>
+                                            <td>High</td>
+                                            <td>SR#7 to check Task Update</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">60c6ce6b-96f5-4299-91b4-9d50c3dbd805</a></td>
+                                            <td>High</td>
+                                            <td>SR#6 </td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">dbd72316-06d9-44d1-a924-cfca38cfdbc8</a></td>
+                                            <td>High</td>
+                                            <td>SR3 Again with OP Minor</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">89b2fc6b-0abd-429c-89ea-66b5fd52ca7d</a></td>
+                                            <td>High</td>
+                                            <td>SR3 with OP Minor</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">651ea70e-3bd8-49ec-8055-07386fc263c5</a></td>
+                                            <td>High</td>
+                                            <td>SR1 with Op. Minor</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">1d05d860-7600-4ccd-a59a-3a1452b6403f</a></td>
+                                            <td>High</td>
+                                            <td>teswt m</td>
+                                            <td>ABD SHIP</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">9d2a34f7-983e-4ca1-b2f2-635b56dca58f</a></td>
+                                            <td>Medium</td>
+                                            <td>Check for TASK update</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">c4d8c6f5-ff40-4b43-9b61-a32675e885a7</a></td>
+                                            <td>High</td>
+                                            <td>Op. Deadlined for Maintence type SR</td>
+                                            <td>Open</td>
+                                            <td>M29030 CLB 4 CLR 3 3D MLG</td>
+                                            <td>UIC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">1dc9e63d-647c-4886-b5a4-abaf0099a579</a></td>
+                                            <td>High</td>
+                                            <td>Op. minor SR for Maintenance type</td>
+                                            <td>Open</td>
+                                            <td>M29030 CLB 4 CLR 3 3D MLG</td>
+                                            <td>UIC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">e22e3926-7d15-41a1-a761-3c5a1e1881e2</a></td>
+                                            <td>High</td>
+                                            <td>Op. Deadlined SR</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">21c709f0-2b1a-42a9-bf0a-5007c3d35319</a></td>
+                                            <td>High</td>
+                                            <td>Op. Minor SR</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">fa0523a8-5fd4-485e-a9d3-3ae4f6dcc853</a></td>
+                                            <td>High</td>
+                                            <td>Maintenance SR to check for Operational status update from the Task level.</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">35ce965b-7c42-45a7-8ecd-5469cb010a12</a></td>
+                                            <td>High</td>
+                                            <td>10/23 Create SR Operational Minor against instance with operational no SR status</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="view.html">25378dc7-8734-43cd-ba00-3d04f44c2f80</a></td>
+                                            <td>High</td>
+                                            <td>test SR - Operational Minor status</td>
+                                            <td>Open</td>
+                                            <td>AAC-M29030</td>
+                                            <td>AAC-M29030</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
