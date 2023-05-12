@@ -165,7 +165,7 @@ function orderCheckout() {
   // cartEmpty();
   // updateCartCountNotification(0);
 
-  window.location.href = '../checkout-progress.html';
+  window.location.href = '../../checkout-progress.html';
 }
 
 // Event Listener for Checkout button
