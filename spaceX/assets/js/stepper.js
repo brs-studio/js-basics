@@ -1,5 +1,4 @@
 // JavaScript code for stepper form
-
 const form = document.getElementById("stepper-form");
 const fieldsets = form.querySelectorAll("fieldset");
 const nextBtns = form.querySelectorAll(".next-btn");

@@ -37,7 +37,6 @@ if (title && price) {
 
 // When an item is added then this fucntion is called
 function addItemToCart(event) {
-  console.log(Number(quantity.value));
   event.preventDefault();
   const item = {
     productID,
@@ -46,7 +45,6 @@ function addItemToCart(event) {
     price,
     imageURL: image,
   };
-  console.log(item);
   updateStore(item);
   cartNotificationContainer.style.display = "block";
 }
@@ -83,7 +81,6 @@ function updateStore(addedItem) {
       (item) => item.productID === addedItem.productID
     );
     if (existingCartItem) {
-      console.log("item already exists...");
       existingCartItem.quantity =
         existingCartItem.quantity + addedItem.quantity;
       storedCartItems = [...storedItems];
@@ -93,7 +90,6 @@ function updateStore(addedItem) {
   } else {
     storedCartItems = [addedItem];
   }
-  console.log(storedCartItems);
   localStorage.setItem("cartItems", JSON.stringify(storedCartItems));
   updateCartNotification(storedCartItems.length);
 }

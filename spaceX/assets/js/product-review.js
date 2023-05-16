@@ -84,7 +84,6 @@ function updateProductReviewStore(newReview) {
 function getProductReviewFromStore() {
   const items = localStorage.getItem("productreview");
   let reviews = JSON.parse(items);
-  console.log(reviews);
   if (reviews === null) {
     reviews = localStorage.setItem("productreview", JSON.stringify([]));
     return;
@@ -107,10 +106,10 @@ function getProductReviewFromStore() {
         `;
     });
     productReviewElement.innerHTML = reviewList;
-    console.log(reviews);
   }
 }
 
+// Get produt review from local storage
 getProductReviewFromStore();
 function postProductReview() {
   const rating = selectedRating.textContent;
@@ -127,9 +126,7 @@ function postProductReview() {
   };
   console.log(productReview);
   updateProductReviewStore(productReview);
-  // Perform further actions with the rating and review data
 
-  // Reset the selected rating and review text
   selectedRating.textContent = "0 stars";
   stars.forEach((star) => {
     star.style.color = "#ccc";
