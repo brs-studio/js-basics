@@ -250,16 +250,33 @@ const selectItemsPerPage = document.getElementById("items-per-page");
 const productSelectElement = document.getElementById("product-type");
 const productSizeSelectElement = document.getElementById("product-size");
 const productColorElement = document.getElementById("product-color");
-
+const noProducts = document.getElementById("no-products");
+noProducts.style.display = "none";
 const productsizes = {
-  tshirt:["All", "S", "M", "L", "2X", "2XL", "3X", "3XL"],
+  tshirt: ["All", "S", "M", "L", "2X", "2XL", "3X", "3XL"],
   hat: [],
-  poster: ["All","18x24", "23.5x35.5"],
+  poster: ["All", "18x24", "23.5x35.5"],
   journal: ["All", "5.25x8.25"],
   bottle: ["All", "1L", "2L"],
   chain: [],
   cup: ["All", "15-oz", "20-oz"],
-  all:["All", "S", "M", "L", "2X", "2XL", "3X", "3XL","18x24", "23.5x35.5","5.25x8.25","1L", "2L","15-oz", "20-oz"]
+  all: [
+    "All",
+    "S",
+    "M",
+    "L",
+    "2X",
+    "2XL",
+    "3X",
+    "3XL",
+    "18x24",
+    "23.5x35.5",
+    "5.25x8.25",
+    "1L",
+    "2L",
+    "15-oz",
+    "20-oz",
+  ],
 };
 
 function displayProducts(productItemsArr) {
@@ -438,7 +455,7 @@ document.getElementById("product-color").addEventListener("change", (e) => {
 });
 
 document.getElementById("product-size").addEventListener("change", (e) => {
-    productSize = e.target.value;
+  productSize = e.target.value;
   if (productSize === "All") {
     delete filters.size;
     filteredItems(products);
@@ -461,6 +478,11 @@ function filteredItems(items) {
   currentPage = 1;
   displayProducts(filteredItems);
   displayPagination(filteredItems);
+  if (filteredProducts.length === 0) {
+    noProducts.style.display = "block";
+  } else {
+    noProducts.style.display = "none";
+  }
   return;
 }
 
@@ -490,8 +512,8 @@ displayPagination(products);
 initProductSize();
 
 // set default value as (0 - selected index) for the product type, color and size
-window.addEventListener('load', function() {
+window.addEventListener("load", function () {
   productSelectElement.selectedIndex = 0;
   productSizeSelectElement.selectedIndex = 0;
   productColorElement.selectedIndex = 0;
-})
+});
