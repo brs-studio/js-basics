@@ -159,20 +159,20 @@
       <div class="container mt-5" style="height: 700px;">
         <div class="row">
             <h3 class="display-5 fs-3 fw-bold mb-3 text-center">Signup Form</h3>
-          <form class="col-md-8 center mx-auto">
+          <form id="signupForm" class="col-md-8 center mx-auto">
             <div class="mb-3">
                 <label for="firstname" class="form-label">First Name</label>
-                <input type="password" class="form-control" id="firstname"/>
+                <input type="text" class="form-control" id="firstname" autocomplete="off"/>
             </div>
 
             <div class="mb-3">
                 <label for="lastname" class="form-label">Last Name</label>
-                <input type="password" class="form-control" id="lastname"/>
+                <input type="text" class="form-control" id="lastname" autocomplete="off"/>
             </div>
 
             <div class="mb-3">
               <label for="useremail" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="useremail" aria-describedby="emailHelp"/>
+              <input type="email" class="form-control" id="useremail" aria-describedby="emailHelp" autocomplete="off"/>
               <div id="emailHelp" class="form-text">
                 We'll never share your email with anyone else.
               </div>
@@ -180,7 +180,7 @@
 
             <div class="mb-3">
                 <label for="address">Address</label>
-                <textarea class="form-control" placeholder="Enter address" id="address"></textarea>
+                <textarea class="form-control" placeholder="Enter address" id="address" autocomplete="off"></textarea>
             </div>
 
             <div class="mb-3">
@@ -193,7 +193,7 @@
               <input type="password" class="form-control" id="confirmpassword"/>
             </div>
 
-            <button type="submit" class="btn btn-dark">Signup</button>
+            <button id="signup" type="submit" class="btn btn-dark">Signup</button>
           </form>
         </div>
       </div>
@@ -227,6 +227,7 @@
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap Bundle Js -->
 
+    <script src="assets/js/signup.js"></script>
     <!--Cart logic script  -->
     <script src="assets/js/cartcount.js"></script>
     <!-- Plus minu for range selector -->
