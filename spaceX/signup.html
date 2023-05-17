@@ -20,6 +20,7 @@
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/checkout-progress.css" />
   </head>
 
   <body>
@@ -133,7 +134,10 @@
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link text-uppercase" aria-current="page" href="signup.html"
+                <a
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  href="signup.html"
                   >Account</a
                 >
               </li>
@@ -152,128 +156,47 @@
 
     <main>
       <!-- Cart Section -->
-      <div class="container text-center pt-5 mt-5 mb-md-5">
-        <!-- Start:Cart List -->
-        <div id="cart-container" class="row align-items-center">
-          <div class="col-md-12">
-            <div class="col-sm-12 col-md-12">
-              <table class="table text-md-start">
-                <tbody id="cartTableBody"></tbody>
-              </table>
-
-              <div>
-                <p class="border-0"></p>
-                <div class="text-end border-0 pt-4" colspan="2">
-                  <h5>Total</h5>
-                  <h5 class="sub-total fw-bold"></h5>
-                  <p>Shipping & taxes calculated at checkout</p>
-                </div>
-              </div>
-
-              <div class="border-0 pt-5 pb-5 d-flex flex-row-reverse">
-                <button
-                  id="checkoutBtn"
-                  type="button"
-                  class="btn btn-dark btn-lg rounded-0 btn-block w-10"
-                >
-                  Checkout <span class="fa fa-play"></span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Start:Cart List -->
-        <!-- Start:Estimator -->
+      <div class="container mt-5" style="height: 700px;">
         <div class="row">
-          <div class="col-md-12">
-            <div class="Panel">
-              <h2 class="Panel__Title Heading u-h2 ShippingEstimator__Title">
-                Estimate Shipping + Handling
-              </h2>
+            <h3 class="display-5 fs-3 fw-bold mb-3 text-center">Signup Form</h3>
+          <form class="col-md-8 center mx-auto">
+            <div class="mb-3">
+                <label for="firstname" class="form-label">First Name</label>
+                <input type="password" class="form-control" id="firstname"/>
+            </div>
 
-              <div class="row text-start">
-                <div class="col-md-4 mb-3">
-                  <label for="username" class="form-label">Name</label>
-                  <input
-                    type="text"
-                    class="form-control rounded-0"
-                    id="username"
-                    autocomplete="off"
-                  />
-                </div>
-                <div class="col-md-4">
-                  <label for="inputCity" class="form-label">Country</label>
-                  <select
-                    id="countries"
-                    class="form-select"
-                    aria-label="countries"
-                  >
-                    <option value="" disabled selected>Select a Country</option>
-                  </select>
-                </div>
-                <div class="col-md-4">
-                  <label for="province" class="form-label">Province</label>
-                  <select id="province" class="form-select rounded-0" disabled>
-                    <option value="" disabled selected>
-                      Select a Province
-                    </option>
-                  </select>
-                </div>
-                <div class="col-md-3">
-                  <label for="city" class="form-label">City</label>
-                  <select
-                    id="city"
-                    class="form-select"
-                    aria-label="city"
-                    disabled
-                  >
-                    <option value="" disabled selected>Select a City</option>
-                  </select>
-                </div>
+            <div class="mb-3">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="password" class="form-control" id="lastname"/>
+            </div>
 
-                <div class="col-2">
-                  <label>&nbsp;</label>
-                  <button
-                    id="signup"
-                    type="submit"
-                    class="btn btn-dark btn-lg rounded-0 btn-block w-100 mt-2"
-                  >
-                    Sign Up
-                  </button>
-                </div>
+            <div class="mb-3">
+              <label for="useremail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="useremail" aria-describedby="emailHelp"/>
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
               </div>
             </div>
-          </div>
-        </div>
-        <!-- End:Recently Viewed -->
-      </div>
 
-      <hr />
-
-      <!-- Start:Recently Viewed -->
-      <div class="container text-center">
-        <div class="row py-5">
-          <div class="col-md-12">
-            <h3>RECENTLY VIEWED</h3>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4">
-            <div class="featureContent position-relative">
-              <div class="featuredHoveredImg">
-                <img src="assets/img/product-nonhover.jpg" class="img-fluid" />
-              </div>
-              <div class="py-4">
-                <h4>SPACEX F9 MODEL</h4>
-                <p>$150.00</p>
-              </div>
+            <div class="mb-3">
+                <label for="address">Address</label>
+                <textarea class="form-control" placeholder="Enter address" id="address"></textarea>
             </div>
-          </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password"/>
+            </div>
+
+            <div class="mb-3">
+              <label for="confirmpassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmpassword"/>
+            </div>
+
+            <button type="submit" class="btn btn-dark">Signup</button>
+          </form>
         </div>
       </div>
-      <!-- End:Recently Viewed -->
-
       <!-- FOOTER -->
 
       <footer class="bg-black py-5">
@@ -301,11 +224,11 @@
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-    <!-- Bootstrap Bundle Js -->
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Bundle Js -->
 
     <!--Cart logic script  -->
-    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/cartcount.js"></script>
     <!-- Plus minu for range selector -->
     <script>
       $(document).ready(function () {

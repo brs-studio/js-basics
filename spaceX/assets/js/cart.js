@@ -108,6 +108,7 @@ function quantityChanged(e) {
   updateCartTotal();
 }
 
+// Function to update cart total
 function updateCartTotal() {
   let cartTotal = 0;
   const cartRows = document.getElementsByClassName("cart-row");
@@ -141,7 +142,6 @@ function updateCartCountNotification(count) {
 // This function removes an item from the cart table
 function removeCartItem(e) {
   const buttonClicked = e.target;
-  console.log(buttonClicked);
   const productId = buttonClicked.parentElement.parentElement.id;
   const storedItems = JSON.parse(localStorage.getItem("cartItems"));
   const filteredItems = storedItems.filter(
@@ -156,16 +156,7 @@ function removeCartItem(e) {
 
 // When checkout button is clicked, this function is called
 function orderCheckout() {
-  // alert("order placed successfully.");
-  // const cartItems = document.getElementById("cartTableBody");
-  // while (cartItems.hasChildNodes()) {
-  //   cartItems.removeChild(cartItems.firstChild);
-  // }
-  // localStorage.setItem("cartItems", JSON.stringify([]));
-  // cartEmpty();
-  // updateCartCountNotification(0);
-
-  window.location.href = '../../checkout-progress.html';
+  window.location.href = 'checkout-progress.html';
 }
 
 // Event Listener for Checkout button

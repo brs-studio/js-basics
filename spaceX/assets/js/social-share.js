@@ -2,11 +2,16 @@
 const facebookIcon = document.getElementById("facebook-icon");
 const twitterIcon = document.getElementById("twitter-icon");
 const copyIcon = document.getElementById("copy-icon");
-const tooltip = new bootstrap.Tooltip(copyIcon);
+
 // Add event listeners for social sharing
 facebookIcon.addEventListener("click", shareOnFacebook);
 twitterIcon.addEventListener("click", shareOnTwitter);
 copyIcon.addEventListener("click", copyLink);
+copyIcon.addEventListener("mouseout", hideTooltip);
+
+// create tooltip instance
+const tooltip = new bootstrap.Tooltip(copyIcon);
+tooltip.hide();
 
 // Sharing functions
 function shareOnFacebook() {
@@ -22,11 +27,34 @@ function shareOnTwitter() {
   window.open(shareUrl, "_blank");
 }
 
-function copyLink() {
+async function copyLink() {
   const url = window.location.href;
-  console.log(url);
-  navigator.clipboard.writeText(url);
-  // alert("Link copied");
-  console.log(tooltip);
+  tooltip.update();
+  tooltip._config.title = "Copied";
+  const shortURL = await urlshortener(url);
+  navigator.clipboard.writeText(shortURL);
+  tooltip.update();
   tooltip.show();
+  tooltip._config.title = "Copy Link";
+}
+
+function hideTooltip(params) {
+  tooltip.hide();
+}
+
+document.addEventListener("visibilitychange", function () {
+  tooltip.hide();
+});
+
+// function to shorten URL
+async function urlshortener(url) {
+  try {
+    let request = await fetch(
+      `https://api.shrtco.de/v2/shorten?url=${encodeURIComponent(url)}`
+    );
+    let response = await request.json();
+    return response.result.full_short_link;
+  } catch (error) {
+    return "";
+  }
 }

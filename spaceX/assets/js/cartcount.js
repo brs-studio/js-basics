@@ -5,7 +5,6 @@ let storedCartItems;
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", getStore);
 } else {
-  console.log("loaded...");
   getStore();
 }
 
