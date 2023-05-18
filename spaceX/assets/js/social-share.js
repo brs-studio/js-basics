@@ -53,6 +53,7 @@ async function urlshortener(url) {
       `https://api.shrtco.de/v2/shorten?url=${encodeURIComponent(url)}`
     );
     let response = await request.json();
+    console.log(response);
     return response.result.full_short_link;
   } catch (error) {
     return "";

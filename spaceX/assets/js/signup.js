@@ -2,7 +2,13 @@
 const formElement = document.getElementById("signupForm");
 const firstName = document.getElementById("firstname");
 const lastname = document.getElementById("lastname");
+const address = document.getElementById("address");
 const signupBtn = document.getElementById("signup");
+
+const maxLength = 250;
+const warnLength = 10;
+const charCount = document.getElementById("charCount");
+charCount.textContent = `${maxLength}/${maxLength}`;
 
 function validateForm(e) {
   e.preventDefault();
@@ -16,13 +22,15 @@ function validateForm(e) {
         input.focus();
         return;
       }
-      if (input.value.trim().length > 12) {
-        alert(`${inputLabel} cannot exceed 12 characters`);
-        input.focus();
-        return;
+      if (input.id === "firstname") {
+        if (input.value.trim().length < 3) {
+          alert(`${inputLabel} should be at least 3 characters.`);
+          input.focus();
+          return;
+        }
       }
-      if (input.value.trim().length < 3) {
-        alert(`${inputLabel} cannot be less than 3 characters`);
+      if (input.value.trim().length > 16) {
+        alert(`${inputLabel} cannot exceed 16 characters`);
         input.focus();
         return;
       }
@@ -95,7 +103,22 @@ function validateForm(e) {
     return;
   }
   alert("Signup Success");
-  formElement.reset()
+  formElement.reset();
 }
 
 signupBtn.addEventListener("click", validateForm);
+
+address.addEventListener("input", function () {
+  const remainingChars = maxLength - address.value.length;
+
+  if (remainingChars <= warnLength) {
+    charCount.classList.add("text-danger");
+  } else {
+    charCount.classList.remove("text-danger");
+  }
+  if (remainingChars <= 0) {
+    address.value = address.value.slice(0, maxLength);
+  }
+
+  charCount.textContent = `${Math.max(remainingChars, 0)}/${maxLength}`;
+});

@@ -6,8 +6,8 @@ const productId = productDetails.get("id");
 const stars = document.querySelectorAll(".star");
 const selectedRating = document.querySelector(".selected-rating");
 const reviewText = document.getElementById("product-review");
-const submitBtn = document.querySelector(".submit-btn");
 const productReviewElement = document.getElementById("productReviewList");
+const productreviewBtn = document.getElementById("product-reviewBtn")
 
 // Init review arr
 let productReviewArr = [];
@@ -111,7 +111,20 @@ function getProductReviewFromStore() {
 
 // Get produt review from local storage
 getProductReviewFromStore();
+
+// Post product review
 function postProductReview() {
+  console.log(reviewText.value.length);
+  if(reviewText.value.length === 0){
+    alert("Enter a product review")
+    reviewText.focus()
+    return
+  }
+  if(reviewText.value.length < 5){
+    alert("Review cannot be less than 5 characters")
+    reviewText.focus()
+    return
+  }
   const rating = selectedRating.textContent;
   const review = reviewText.value;
   const username = getRandomName();
@@ -134,4 +147,4 @@ function postProductReview() {
   reviewText.value = "";
 }
 
-submitBtn.addEventListener("click", postProductReview);
+productreviewBtn.addEventListener("click", postProductReview);
