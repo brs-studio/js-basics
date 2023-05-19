@@ -53,17 +53,21 @@ function addItemToCart(event) {
 function updateCartNotification(count) {
   cartCount.innerText = `CART(${count})`;
   cartNotificationContainer.innerHTML = `
-    <p><span>Item added to your cart</span></p>
-    <button onclick=cartHide() >X</button>
-    <div class="cart-notification-content">
-        <img src="${image}" height='50px' width='50px' alt="${title}">
-        <div>
+    <div class="cart-header">
+      <p><span>Item added to your cart</span></p>
+      <button class="btn btn-danger" onclick=cartHide() >X</button>
+    </div>
+    <div class="cart-notification-content py-3">
+        <img src="${image}" height='80px' width='80px' alt="${title}">
+        <div class="px-3 title_price">
             <p>${title}</p>
             <p>${price}</p>
         </div>
-        </div>
-         <a class='btn' href="cart.html">View my cart (${count})</a>
-         <a class='btn' href="list.html">Continue Shopping</a>
+    </div>
+    <div class="p-5">
+      <a class='btn btn-dark p-2 mb-3' href="cart.html">View my cart (${count})</a>
+      <a class='btn btn-dark' href="list.html">Continue Shopping</a>
+    </div>
     `;
 }
 

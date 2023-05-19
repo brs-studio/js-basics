@@ -25,9 +25,15 @@ const form = document.getElementById("stepper-form");
 const fieldsets = form.querySelectorAll("fieldset");
 const nextBtns = form.querySelectorAll(".next-btn");
 const prevBtns = form.querySelectorAll(".prev-btn");
+const address = document.getElementById("address");
 let currentStep = 0;
+// max and warn length for address 
+const maxLength = 250;
+const warnLength = 10;
+const charCount = document.getElementById("charCount");
+charCount.textContent = `${maxLength}/${maxLength}`;
 
-// Input validation 
+// Input validation
 function validateStep(item) {
   const inputs = [...item.querySelectorAll("input, textarea")];
   let isEmpty = false;
@@ -42,9 +48,16 @@ function validateStep(item) {
         input.focus();
         break;
       }
-      if (inputField.value.length <= 3) {
+      if (inputField.value.length <= 3  && !(inputField.id === "lastName") ) {
+        console.log(inputField);
         isEmpty = true;
         alert(`${labelText} should be greater than 3 charecters`);
+        input.focus();
+        break;
+      }
+      if (inputField.value.length > 16 && !(inputField.id === "email") ) {
+        isEmpty = true;
+        alert(`${labelText} cannot be greater than 16 charecters`);
         input.focus();
         break;
       }
@@ -208,7 +221,7 @@ async function confirmCheckout(e) {
 
   const response = await emailjs.send(serviceId, templateId, paramss);
   if (response.status === 200) {
-    window.location.href = "../order-success.html";
+    window.location.href = "order-success.html";
     localStorage.setItem("cartItems", JSON.stringify([]));
   }
 }
@@ -218,3 +231,18 @@ getCartItemsFromLocalStore();
 document
   .getElementById("confirmBtn")
   .addEventListener("click", confirmCheckout);
+
+address.addEventListener("input", function () {
+  const remainingChars = maxLength - address.value.length;
+
+  if (remainingChars <= warnLength) {
+    charCount.classList.add("text-danger");
+  } else {
+    charCount.classList.remove("text-danger");
+  }
+  if (remainingChars <= 0) {
+    address.value = address.value.slice(0, maxLength);
+  }
+
+  charCount.textContent = `${Math.max(remainingChars, 0)}/${maxLength}`;
+});
