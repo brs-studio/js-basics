@@ -3713,8 +3713,8 @@ textarea.form-control-lg {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: var(--bs-nav-pills-link-active-color);
-  background-color: var(--bs-nav-pills-link-active-bg);
+  color: var(--bs-nav-pills-link-active-bg);
+/*  background-color: var(--bs-nav-pills-link-active-bg);*/
 }
 
 .nav-fill > .nav-link,
@@ -11582,10 +11582,13 @@ main-timeline {
 }
 
 .timeline .event:before {
-    left: -207px;
+    left: -167px;
+    top: 2px;
+    z-index: 999;
     content: attr(data-date);
+    color: #727cf5;
     text-align: right;
-    font-weight: 100;
+    font-weight: 700;
     font-size: 0.9em;
     min-width: 120px;
 }
@@ -11600,11 +11603,11 @@ main-timeline {
 .timeline .event:after {
     -webkit-box-shadow: 0 0 0 3px #727cf5;
     box-shadow: 0 0 0 3px #727cf5;
-    left: -55.8px;
+    left: -59.8px;
     background: #fff;
     border-radius: 50%;
-    height: 9px;
-    width: 9px;
+    height: 18px;
+    width: 18px;
     content: "";
     top: 5px;
 }
@@ -11633,4 +11636,15 @@ main-timeline {
 .rtl .timeline .event::after {
     left: 0;
     right: -55.8px;
+}
+
+/*stepper css*/
+.form-stepper-circle {
+  border: 1px solid var(--bs-nav-pills-link-active-bg);
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+a.active > .form-stepper-circle {
+  color: #fff;
+  background-color: var(--bs-nav-pills-link-active-bg);
 }

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>JS Components - Form Wizard</title>
+        <title>Call Center</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="js/lang/lang.en.js"></script>
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">JS Components</a>
+            <a class="navbar-brand ps-3" href="index.html">Call Center</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         </nav>
@@ -23,7 +23,6 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
                             <a class="nav-link" href="index.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
@@ -72,14 +71,34 @@
                                         <form class="row g-3 needs-validation" id="example1">
                                             <div class="nav nav-pills nav-justified flex-column" id="cardTab" role="tablist">
                                             <ul class="nav nav-pills mb-3 justify-content-center" role="tablist">
-                                                <li class="nav-item">
-                                                    <a class="nav-item nav-link disabled active" href="#ex1_step1" data-bs-toggle="step"><span class='account'>Service Request Details</a>
+                                                <li class="nav-item form-stepper-active text-center form-stepper-list" step="1">
+                                                    <a class="nav-item nav-link disabled mx-2" href="#ex1_step1" data-bs-toggle="step">
+                                                        <span class="form-stepper-circle">
+                                                            <span>1</span>
+                                                        </span>
+                                                        <div class="label mt-2">Service Request Details</div>
+                                                    </a>
+                                                    <!-- <a class="nav-item nav-link disabled active" href="#ex1_step1" data-bs-toggle="step"><span class='account'>Service Request Details</a> -->
                                                 </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-item nav-link disabled" href="#ex1_step2" data-bs-toggle="step">Customer Details</a>
+                                                <li class="nav-item form-stepper-active text-center form-stepper-list" step="2">
+                                                    <a class="nav-item nav-link disabled mx-2" href="#ex1_step2" data-bs-toggle="step">
+                                                        <span class="form-stepper-circle">
+                                                            <span>2</span>
+                                                        </span>
+                                                        <div class="label mt-2">Customer Details</div>
+                                                    </a>
+                                                    <!-- <a class="nav-item nav-link disabled" href="#ex1_step2" data-bs-toggle="step">
+                                                        Customer Details
+                                                    </a> -->
                                                 </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-item nav-link disabled" href="#ex1_step3" data-bs-toggle="step">Review</a>
+                                                <li class="nav-item form-stepper-active text-center form-stepper-list" step="3">
+                                                    <a class="nav-item nav-link disabled mx-2" href="#ex1_step3" data-bs-toggle="step">
+                                                        <span class="form-stepper-circle">
+                                                            <span>3</span>
+                                                        </span>
+                                                        <div class="label mt-2">Review</div>
+                                                    </a>
+                                                    <!-- <a class="nav-item nav-link disabled" href="#ex1_step3" data-bs-toggle="step">Review</a> -->
                                                 </li>
                                             </ul>
                                             </div>

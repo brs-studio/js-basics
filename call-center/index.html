@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>JS Components</title>
+        <title>Call Center</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <script src="js/wordcloud.js"></script>
@@ -14,7 +14,7 @@
     <body class="sb-nav-fixed" onload="loadWordCloud()">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">JS Components</a>
+            <a class="navbar-brand ps-3" href="index.html">Call Center</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         </nav>
@@ -23,7 +23,6 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
                             <a class="nav-link" href="index.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
@@ -48,7 +47,7 @@
                                 <div class="card bg-primary text-white mb-4">
                                     <p class="card-body">Service Requests Approved</p>
                                     <h4 class="card-footer d-flex align-items-center justify-content-between">
-                                        20
+                                        12
                                     </h4>
                                 </div>
                             </div>
@@ -56,7 +55,7 @@
                                 <div class="card bg-warning text-white mb-4">
                                     <p class="card-body">Service Requests Open</p>
                                     <h4 class="card-footer d-flex align-items-center justify-content-between">
-                                        20
+                                        10
                                     </h4>
                                 </div>
                             </div>
@@ -64,7 +63,7 @@
                                 <div class="card bg-success text-white mb-4">
                                     <p class="card-body">Service Requests Assigned</p>
                                     <h4 class="card-footer d-flex align-items-center justify-content-between">
-                                        20
+                                        9
                                     </h4>
                                 </div>
                             </div>
@@ -82,7 +81,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-area me-1"></i>
-                                        Area Chart Example
+                                        Daily Service Requests
                                     </div>
                                     <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
                                 </div>
@@ -91,7 +90,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-bar me-1"></i>
-                                        Bar Chart Example
+                                        Monthly Service Requests
                                     </div>
                                     <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
                                 </div>
@@ -102,7 +101,7 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-area me-1"></i>
-                                        Word Cloud
+                                        Our customers around the world
                                     </div>
                                     <div class="card-body">
                                         <div id="word-cloud" width="100%" height="40"></div>
@@ -115,12 +114,12 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-area me-1"></i>
-                                        Timeline
+                                        Service Request Workflow Process
                                     </div>
                                     <div class="card-body">
                                         <div id="content">
                                             <ul class="timeline">
-                                                <li class="event" data-date="2013 - 2015">
+<!--                                                 <li class="event" data-date="2013 - 2015">
                                                     <h3>Visual Art &amp; Design</h3>
                                                     <p>Worked with editorial, product marketing, social and creative teams to design marketing video assets, which improved performance by 25%</p>
                                                 </li>
@@ -135,6 +134,34 @@
                                                 <li class="event" data-date="2019 - 2023">
                                                     <h3>Graphic Designer</h3>
                                                     <p>Designed the deals section for a financial planner IOS app for one of India's leading travel company.</p>
+                                                </li> -->
+                                                <li class="event" data-date="1">
+                                                    <h3>New Request</h3>
+                                                    <p>New Service Request is raised by User</p>
+                                                </li>
+                                                <li class="event" data-date="2">
+                                                    <h3>Adding Service Request into System</h3>
+                                                    <p>Raised service request by user id added to the system by Tech Support</p>
+                                                </li>
+                                                <li class="event" data-date="3">
+                                                    <h3>Technician Assignment</h3>
+                                                    <p>A Technician is assigned to raised request to look into it and resolve issue</p>
+                                                </li>
+                                                <li class="event" data-date="4">
+                                                    <h3>Sent for Approval</h3>
+                                                    <p>Proposed solution for issue by Technician is sent for approval to high-tier techs</p>
+                                                </li>
+                                                <li class="event" data-date="5">
+                                                    <h3>Service Request work flow completed</h3>
+                                                    <p>Once the solution is valid, then it is approved by high-tier techs and the technician completes the service request.</p>
+                                                </li>
+                                                <li class="event" data-date="6">
+                                                    <h3>Request Closed</h3>
+                                                    <p>Once the request completed, it is closed and updated in the system by technician.</p>
+                                                </li>
+                                                <li class="event" data-date="7">
+                                                    <h3>User notified and survey is sent</h3>
+                                                    <p>After the service request is closed, the user is notified about the status and end user feedback regarding service delivery is gathered</p>
                                                 </li>
                                             </ul>
                                         </div>
