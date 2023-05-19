@@ -139,7 +139,10 @@
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link text-uppercase" aria-current="page" href="signup.html"
+                <a
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  href="signup.html"
                   >Account</a
                 >
               </li>
@@ -227,27 +230,64 @@
                   <div>&nbsp;</div>
                 </div>
                 <div id="social-sharing" class="mt-3">
-                  <a
-                    href="#"
-                    class="social-icon px-2 fs-4 text-dark"
-                    id="facebook-icon"
-                    ><i class="fa-brands fa-facebook"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="social-icon px-2 fs-4 text-dark"
-                    id="twitter-icon"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="social-icon px-2 fs-4 text-dark"
-                    id="copy-icon"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    title="Copy Link"
-                    ><i class="fa-solid fa-copy"></i
-                  ></a>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Social share
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Social share
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <a
+                            href="#"
+                            class="social-icon px-2 fs-4 text-dark"
+                            id="facebook-icon"
+                            ><i class="fa-brands fa-facebook"></i
+                          ></a>
+                          <a
+                            href="#"
+                            class="social-icon px-2 fs-4 text-dark"
+                            id="twitter-icon"
+                            ><i class="fa-brands fa-twitter"></i
+                          ></a>
+                          <p id="shortenedURL" class="mt-4 mx-2 text-start">short url</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-dark"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <hr />
@@ -332,7 +372,13 @@
               <span class="star" data-rating="5">&#9733;</span>
             </div>
             <p class="selected-rating">0 stars</p>
-            <button type="button" id="product-reviewBtn" class="btn btn-dark submit-btn">Submit</button>
+            <button
+              type="button"
+              id="product-reviewBtn"
+              class="btn btn-dark submit-btn"
+            >
+              Submit
+            </button>
           </div>
         </div>
       </div>

@@ -114,7 +114,6 @@ getProductReviewFromStore();
 
 // Post product review
 function postProductReview() {
-  console.log(reviewText.value.length);
   if(reviewText.value.length === 0){
     alert("Enter a product review")
     reviewText.focus()
@@ -137,7 +136,6 @@ function postProductReview() {
     createdBy: username,
     createdAt: createdTime,
   };
-  console.log(productReview);
   updateProductReviewStore(productReview);
 
   selectedRating.textContent = "0 stars";
