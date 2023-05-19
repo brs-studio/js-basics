@@ -49,7 +49,6 @@ function validateStep(item) {
         break;
       }
       if (inputField.value.length <= 3  && !(inputField.id === "lastName") ) {
-        console.log(inputField);
         isEmpty = true;
         alert(`${labelText} should be greater than 3 charecters`);
         input.focus();

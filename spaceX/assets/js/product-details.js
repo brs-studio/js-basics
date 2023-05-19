@@ -22,8 +22,6 @@ let verticalCarousel = document.getElementById("vertical-carousel");
 const addToCartBtn = document.getElementById("addToCart");
 let storedCartItems;
 
-
-
 // Set the title and price received from the URL
 if (title && price) {
   productName.innerText = title;
