@@ -35,4 +35,4 @@ document.getElementById("prevSlide").addEventListener("click", prevSlide);
 displaySlides(slide_index); //Init function
 
 // Set Interval that call nextslide function every 5 seconds
-setInterval(nextSlide, 5000)
+// setInterval(nextSlide, 5000)

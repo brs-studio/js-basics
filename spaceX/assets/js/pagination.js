@@ -236,7 +236,7 @@ let products = [
 ];
 
 // Init
-let itemsPerPage = 5;
+let itemsPerPage = 8;
 let currentPage = 1;
 let sortby = "name-asc";
 let productType = "all";
