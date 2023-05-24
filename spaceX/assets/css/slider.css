@@ -36,18 +36,25 @@
 .right:hover {
   background-color: rgba(115, 115, 115, 0.8);
 }
+
+#prevSlide,
+#nextSlide {
+  margin-top: 160px;
+}
 .content {
+  margin-top: 190px;
   color: #eff5d4;
-  font-size: 30px;
   padding: 8px 12px;
   position: absolute;
   top: 10px;
   width: 100%;
   text-align: center;
+  font-weight: bold;
 }
 .active {
   background-color: #717171;
 }
+
 /* Fading animation */
 .fadeimg {
   -webkit-animation-name: fade;
