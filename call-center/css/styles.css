@@ -11585,7 +11585,7 @@ main-timeline {
     left: -167px;
     top: 2px;
     z-index: 999;
-    content: attr(data-date);
+    content: attr(data-step);
     color: #727cf5;
     text-align: right;
     font-weight: 700;
