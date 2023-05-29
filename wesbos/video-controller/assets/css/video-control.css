@@ -7,6 +7,7 @@ Library / Component: styles for video controller
 
 .player {
   max-width: 750px;
+  margin-bottom: 100px;
   border: 5px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   position: relative;
