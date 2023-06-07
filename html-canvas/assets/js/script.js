@@ -51,8 +51,6 @@ function draw(e) {
 
 canvas.addEventListener("mousedown", (e) => {
   isDrawing = true;
-  // console.log(`Offset X - ${e.offsetX}`);
-  // console.log(`Offset Y - ${e.offsetY}`);
   [lastX, lastY] = [e.offsetX, e.offsetY]; //mouse cursor's coordinates 
 });
 
