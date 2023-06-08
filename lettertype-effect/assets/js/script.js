@@ -52,9 +52,11 @@ function getRandomBetween(min = 20, max = 150, randomNumber = Math.random()) {
 
 // recursion
 function draw(el) {
+  console.log(el);
   let index = 1;
   const text = el.textContent;
   const { typeMin, typeMax } = el.dataset;
+
   async function drawLetter() {
     el.textContent = text.slice(0, index);
     index += 1;
@@ -64,6 +66,7 @@ function draw(el) {
       drawLetter();
     }
   }
+
   drawLetter();
 }
 
@@ -77,7 +80,12 @@ function restartTypeEffect(params) {
 // event listener for restart
 resetBtn.addEventListener("click", restartTypeEffect);
 
-
 // Init content and event listener
 setContent();
 document.querySelectorAll("[data-type]").forEach(draw);
+
+function setTheme(theme) {
+  document.documentElement.style.setProperty("--primary-color", theme);
+  localStorage.setItem("movie-theme", theme);
+}
+setTheme(localStorage.getItem("movie-theme") || chathams_blue);
