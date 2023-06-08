@@ -80,10 +80,11 @@ function restartTypeEffect(params) {
 // event listener for restart
 resetBtn.addEventListener("click", restartTypeEffect);
 
-// Init content and event listener
+// Init content 
 setContent();
 document.querySelectorAll("[data-type]").forEach(draw);
 
+// theme
 function setTheme(theme) {
   document.documentElement.style.setProperty("--primary-color", theme);
   localStorage.setItem("movie-theme", theme);

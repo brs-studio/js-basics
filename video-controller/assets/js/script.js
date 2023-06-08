@@ -1,7 +1,7 @@
 /** 
 Author: Build Rise Shine with Nyros (BRS) 
 Created: 25-05-2023 
-Library / Component: Script file
+Library  Component: Script file
 Description: video controllers logic
 (c) Copyright by BRS with Nyros. 
 **/
@@ -15,15 +15,16 @@ const toggle = player.querySelector(".toggle");
 const skipButtons = player.querySelectorAll("[data-skip]");
 const ranges = player.querySelectorAll(".player__slider");
 const volumeBtn = document.getElementById("volume");
+const fullScreenBtn = document.querySelector(".toggle_fullscreen");
 
-/* Build out functions */
+// play or pause the video
 function togglePlay() {
   const method = video.paused ? "play" : "pause";
-  video[method]();
-  console.log(video);
-  // console.log(video[method]);
+  video[method](); //video.play() or video.pause() 
+
 }
 
+// update play/pause icon
 function updateButton() {
   const icon = this.paused
     ? '<i class="fa-solid fa-play"></i>'
@@ -31,8 +32,8 @@ function updateButton() {
   toggle.innerHTML = icon;
 }
 
+// skip forward or backward
 function skip() {
-  console.log(video.currentTime);
   video.currentTime += parseFloat(this.dataset.skip);
 }
 
@@ -52,14 +53,21 @@ function handleRangeUpdate(e) {
   video[this.name] = this.value;
 }
 
+// runs every second and video progress bar updated
 function handleProgress() {
   const percent = (video.currentTime / video.duration) * 100;
   progressBar.style.flexBasis = `${percent}%`;
 }
 
+// when clicked on the video progress bar
 function scrub(e) {
   const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
   video.currentTime = scrubTime;
+}
+
+// full screen
+function fullScreen() {
+  video.webkitRequestFullscreen();
 }
 
 //Event Listeners
@@ -74,6 +82,7 @@ ranges.forEach((range) => range.addEventListener("change", handleRangeUpdate));
 ranges.forEach((range) =>
   range.addEventListener("mousemove", handleRangeUpdate)
 );
+fullScreenBtn.addEventListener("click", fullScreen);
 
 //Mouse Events
 let mousedown = false;
