@@ -110,15 +110,11 @@ async function loadJS(language) {
     jsElm.addEventListener('load', () => {
         const dashboardList = document.querySelectorAll('.dashboard')
         const wizardList = document.querySelectorAll('.wizard');
-        const formList = document.querySelectorAll('.form')
-        wizardList.forEach(e => {
-            e.innerHTML = lang.wizard
-        })
         dashboardList.forEach(e => {
             e.innerHTML = lang.dashboard
         })
-        formList.forEach(e => {
-            e.innerHTML = lang.form
+        wizardList.forEach(e => {
+            e.innerHTML = lang.wizard
         })
     })
 }
