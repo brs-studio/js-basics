@@ -1,8 +1,6 @@
-# Tic Tac Toe Game
-    
-
-##### API Link:
-    https://www.exchangerate-api.com/
+# Issue Tracker
 
 ###### Purpose:
-    Player's can add their name and play tic tac toe
+    To create stories with priorities
+
+#### Dear Students, Check out the live app [here](http://203.193.173.125/buildriseshine/javascript/issue-tracker/).

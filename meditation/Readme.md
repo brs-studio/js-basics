@@ -1,10 +1,6 @@
-# Countdown Timer for Meditation
+# Meditation
 
-##### API Link:
-    https://wheretheiss.at/w/developer
+###### Purpose:
+    Conunt down timer for meditaion with background sounds
 
-##### Purpose:
-    To fetch the real-time ISS location.
-
-##### APP URL:
-    http://203.193.173.125/buildriseshine/js-apps/meditation/
+#### Dear Students, Check out the live app [here](http://203.193.173.125/buildriseshine/javascript/meditation/).

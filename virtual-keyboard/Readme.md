@@ -1,8 +1,3 @@
-# Tic Tac Toe Game
-    
+# Virtual Keyboard
 
-##### API Link:
-    https://www.exchangerate-api.com/
-
-###### Purpose:
-    Player's can add their name and play tic tac toe
+#### Dear Students, Check out the live app [here](http://203.193.173.125/buildriseshine/javascript/virtual-keyboard/).

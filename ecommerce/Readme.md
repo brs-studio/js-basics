@@ -1,8 +1,6 @@
-# Ecommerce App
+# JS E-Commerce App
 
 ###### Purpose:
-   Cart Logic Implementation
-      - Add to cart
-      - Remove from cart
-      - Update total when add/remove item
-      - Reset cart upon order place 
+   Demonstrate a simple E-Commerce App using javascript
+
+#### Dear Students, Check out the live app [here](http://203.193.173.125/buildriseshine/javascript/ecommerce/).
