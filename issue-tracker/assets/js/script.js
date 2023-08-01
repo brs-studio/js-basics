@@ -1,13 +1,17 @@
 /** 
 Author:    Build Rise Shine with Nyros (BRS) 
-Created:   11.05.2022 
+Created:   2023
 Library / Component: Script file
 Description: Rock Paper Scissor game logic
 (c) Copyright by BRS with Nyros. 
 **/
+
+// Init priority list, assigned to list and stories array
 const priorityList = ["Low", "Medium", "High"];
 const assignedToList = ["Edwin", "Tom", "Carl", "Jerome", "Carmelo"];
 let storyList = [];
+
+// Default theme
 let chathams_blue = "#1A4B84";
 
 // Elements
@@ -20,6 +24,7 @@ const descrptionLength = document.getElementById("descLength");
 const maxLength = 100;
 const warnLength = 90;
 
+// Event Listeners
 ["keyup", "change", "keydown", "focus"].forEach(function (e) {
   description.addEventListener(e, textCounter);
 });

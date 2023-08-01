@@ -1,6 +1,6 @@
 /** 
 Author: Build Rise Shine with Nyros (BRS) 
-Created: 25-05-2023 
+Created: 2023 
 Library  Component: Script file
 Description: video controllers logic
 (c) Copyright by BRS with Nyros. 
@@ -91,6 +91,8 @@ progress.addEventListener("mousemove", (e) => mousedown && scrub(e));
 progress.addEventListener("mousedown", () => (mousedown = true));
 progress.addEventListener("mouseup", () => (mousedown = false));
 
+// Default theme
+let chathams_blue = "#1A4B84";
 
 // to change the theme
 function setTheme(theme) {

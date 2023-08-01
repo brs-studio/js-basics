@@ -1,6 +1,6 @@
 /** 
 Author: Build Rise Shine with Nyros (BRS) 
-Created: 26-05-2023 
+Created: 2023 
 Library / Component: Script file
 Description: Letter Type Effect
 (c) Copyright by BRS with Nyros. 
@@ -9,6 +9,9 @@ Description: Letter Type Effect
 /* Get Our Elements */
 const containerDiv = document.getElementById("content");
 const resetBtn = document.getElementById("resetBtn");
+
+// Default theme
+let chathams_blue = "#1A4B84";
 
 // function that sets the content
 function setContent() {
@@ -52,7 +55,6 @@ function getRandomBetween(min = 20, max = 150, randomNumber = Math.random()) {
 
 // recursion
 function draw(el) {
-  console.log(el);
   let index = 1;
   const text = el.textContent;
   const { typeMin, typeMax } = el.dataset;

@@ -1,6 +1,6 @@
 /** 
 Author:    Build Rise Shine with Nyros (BRS) 
-Created:   11.05.2022 
+Created:   2023 
 Library / Component: Script file
 Description: Rock Paper Scissor game logic
 (c) Copyright by BRS with Nyros. 
@@ -23,6 +23,7 @@ const scoreboard = {
   computer: 0,
 };
 
+// Default theme
 let chathams_blue = "#1A4B84";
 
 // check player names and show the game board if true

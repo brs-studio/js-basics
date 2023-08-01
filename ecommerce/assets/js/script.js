@@ -1,23 +1,22 @@
 /** 
 Author:    Build Rise Shine with Nyros (BRS) 
-Created:   11.05.2022 
+Created:   2023
 Library / Component: Script file
 Description: Landing page
 (c) Copyright by BRS with Nyros. 
 **/
 
-// DOM Elements
-
-
+// Default theme
 let chathams_blue = "#1A4B84";
 
-
+// check loading
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", ready);
 } else {
   ready();
 }
 
+// ready state
 function ready() {
   const removeCartItemButton = document.getElementsByClassName("btn-danger");
   for (let i = 0; i < removeCartItemButton.length; i++) {
@@ -43,6 +42,7 @@ function ready() {
     .addEventListener("click", purchaseClicked);
 }
 
+// Purchase button click
 function purchaseClicked() {
   alert("order placed successfully.");
   const cartItems = document.getElementsByClassName("cart-items")[0];
@@ -52,6 +52,7 @@ function purchaseClicked() {
   updateCartTotal();
 }
 
+// Add to cart functionality
 function addToCart(e) {
   console.log(e);
   let button = e.target;
@@ -64,6 +65,7 @@ function addToCart(e) {
   updateCartTotal();
 }
 
+// Table that builds the added cart items
 function addItemToCart(title, price, image) {
   const cartRow = document.createElement("div");
   cartRow.classList.add("cart-row");
@@ -96,6 +98,7 @@ function addItemToCart(title, price, image) {
     .addEventListener("change", quantityChanged);
 }
 
+// When quantity is changed - update the total
 function quantityChanged(e) {
   console.log(e);
   let input = e.target;
@@ -105,12 +108,14 @@ function quantityChanged(e) {
   updateCartTotal();
 }
 
+// Remove cart items
 function removeCartItem(e) {
   const buttonClicked = e.target;
   buttonClicked.parentElement.parentElement.remove();
   updateCartTotal();
 }
 
+// Function that handles the cart total updation
 const updateCartTotal = () => {
   let cartTotal = 0;
   const cartItemContainer = document.getElementsByClassName("cart-items")[0];
@@ -131,7 +136,7 @@ const updateCartTotal = () => {
   )[0].innerText = `₹ ${cartTotal}`;
 };
 
-
+// Set theme
 function setTheme(theme) {
   document.documentElement.style.setProperty("--primary-color", theme);
   localStorage.setItem("movie-theme", theme);

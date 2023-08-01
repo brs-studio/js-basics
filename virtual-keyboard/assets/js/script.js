@@ -1,18 +1,22 @@
 /** 
 Author:    Build Rise Shine with Nyros (BRS) 
-Created:   11.05.2022 
+Created:   2023
 Library / Component: Script file
 Description: Virtual Keyboard
 (c) Copyright by BRS with Nyros. 
 **/
 
+// DOM Elements
 const keys = document.querySelectorAll(".keys");
 const textarea = document.querySelector("textarea");
 const deleteBtn = document.getElementById("delete");
 const shiftBtn = document.getElementById("shift");
 const spaceBtn = document.getElementById("space");
+
+// Default theme
 let chathams_blue = "#1A4B84";
 
+// Init char array
 let chars = [];
 
 // for each to get the key press

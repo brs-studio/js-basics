@@ -1,6 +1,6 @@
 /** 
 Author:    Build Rise Shine with Nyros (BRS) 
-Created:   11.05.2022 
+Created:   2023
 Library / Component: Script file
 Description: Landing page
 (c) Copyright by BRS with Nyros. 
@@ -19,6 +19,7 @@ const quotes = [
   "My thoughts and feelings matter.",
 ];
 
+// Get image path from assets folder
 const bgURL = [
   "./assets/img/landing-bg-1.jpg",
   "./assets/img/landing-bg-2.jpg",
@@ -35,6 +36,7 @@ const placeName = document.getElementById("place");
 const quote = document.getElementById("quote");
 const time = document.getElementById("time");
 
+// Default theme
 let chathams_blue = "#1A4B84";
 
 // Options
@@ -96,6 +98,7 @@ function addZero(n) {
   return (parseInt(n, 10) < 10 ? "0" : "") + n;
 }
 
+// function to show greet message
 function greetings() {
   let today = new Date(),
     hour = today.getHours();
@@ -144,22 +147,26 @@ function checkEscKeyPress(e) {
   }
 }
 
+// Function that handles mouse click event for name
 function mouseClicked() {
   greetName.textContent = "[Enter Name]";
   localStorage.setItem("name", '[Enter Name]');
   return;
 }
 
+// Event Listeners
 greetName.addEventListener("keypress", setName);
 greetName.addEventListener("keydown", checkEscKeyPress);
 greetName.addEventListener("click", mouseClicked);
 
+// Init the functions
 getLocationData();
 displayTime();
 getQuote();
 greetings();
 getName();
 
+// Set theme
 function setTheme(theme) {
   document.documentElement.style.setProperty("--primary-color", theme);
   localStorage.setItem("movie-theme", theme);

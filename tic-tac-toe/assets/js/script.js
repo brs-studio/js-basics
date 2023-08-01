@@ -1,6 +1,6 @@
 /** 
 Author:    Build Rise Shine with Nyros (BRS) 
-Created:   11.05.2022 
+Created:   2023
 Library / Component: Script file
 Description: Tic Tac Toe game logic
 (c) Copyright by BRS with Nyros. 
@@ -32,6 +32,8 @@ const WIN_POSSIBILITY_ARR = [
   [0, 4, 8],
   [2, 4, 6],
 ];
+
+// Default theme
 let chathams_blue = "#1A4B84";
 
 // check player names and show the game board if true

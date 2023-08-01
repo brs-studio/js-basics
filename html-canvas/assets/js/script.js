@@ -1,6 +1,6 @@
 /** 
 Author: Build Rise Shine with Nyros (BRS) 
-Created: 25-05-2023 
+Created: 2023 
 Library / Component: Script file
 Description: HTML 5 Canvas
 (c) Copyright by BRS with Nyros. 
@@ -13,6 +13,10 @@ canvas.height = canvas.clientHeight;
 
 const ctx = canvas.getContext("2d"); // 2 prams - context type and context attributes
 
+// Default theme
+let chathams_blue = "#1A4B84";
+
+// apply some properties to ctx
 ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
@@ -49,16 +53,18 @@ function draw(e) {
   }
 }
 
+
+// Event Listeners
 canvas.addEventListener("mousedown", (e) => {
   isDrawing = true;
   [lastX, lastY] = [e.offsetX, e.offsetY]; //mouse cursor's coordinates 
 });
 
-// Event Listeners
 canvas.addEventListener("mousemove", draw);
 canvas.addEventListener("mouseup", () => (isDrawing = false));
 canvas.addEventListener("mouseout", () => (isDrawing = false));
 
+// set theme
 function setTheme(theme) {
   document.documentElement.style.setProperty("--primary-color", theme);
   localStorage.setItem("movie-theme", theme);
