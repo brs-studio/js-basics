@@ -1,7 +1,6 @@
-# JOKE GENERATOR
+# Speech Synthesis
 
 ###### Purpose:
-    Generate a random joke in JS
+    Read the input text in different voices using JS
 
-###### App URL:
-    
+#### Dear Students, Check out the live app [here](http://203.193.173.125/buildriseshine/javascript/speech-syn/).

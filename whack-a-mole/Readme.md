@@ -1,7 +1,6 @@
-# JOKE GENERATOR
+# Whack a mole
 
 ###### Purpose:
-    Generate a random joke in JS
+   Whack a mole game using JS
 
-###### App URL:
-    
+#### Dear Students, Check out the live app [here](http://203.193.173.125/buildriseshine/javascript/whack-a-mole/).

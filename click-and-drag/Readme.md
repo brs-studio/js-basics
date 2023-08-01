@@ -1,7 +1,6 @@
-# JOKE GENERATOR
+# Click and Drag
 
 ###### Purpose:
-    Generate a random joke in JS
+    Click and drag the cards functionality using JS
 
-###### App URL:
-    
+#### Dear Students, Check out the live app [here](http://203.193.173.125/buildriseshine/javascript/click-and-drag/).

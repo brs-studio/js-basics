@@ -1,7 +1,6 @@
-# JOKE GENERATOR
+# Type ahead
 
 ###### Purpose:
-    Generate a random joke in JS
+   Display the results based on the search keywords entered
 
-###### App URL:
-    
+#### Dear Students, Check out the live app [here](http://203.193.173.125/buildriseshine/javascript/type-ahead/).
