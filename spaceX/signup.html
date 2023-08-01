@@ -157,50 +157,79 @@
 
     <main>
       <!-- Cart Section -->
-      <div class="container mt-5" style="height: 700px;">
+      <div class="container mt-5 mb-5">
         <div class="row">
-            <h3 class="display-5 fs-3 fw-bold mb-3 text-center">Signup Form</h3>
+          <h3 class="display-5 fs-3 fw-bold mb-3 text-center">Signup Form</h3>
           <form id="signupForm" class="col-md-8 center mx-auto">
             <div class="mb-3">
-                <label for="firstname" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstname" autocomplete="off"/>
+              <label for="firstname" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstname"
+                autocomplete="off"
+              />
+              <p class="text-danger d-none">err</p>
             </div>
 
             <div class="mb-3">
-                <label for="lastname" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastname" autocomplete="off"/>
+              <label for="lastname" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastname"
+                autocomplete="off"
+              />
             </div>
 
             <div class="mb-3">
               <label for="useremail" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="useremail" aria-describedby="emailHelp" autocomplete="off"/>
+              <input
+                type="email"
+                class="form-control"
+                id="useremail"
+                aria-describedby="emailHelp"
+                autocomplete="off"
+              />
               <div id="emailHelp" class="form-text">
                 We'll never share your email with anyone else.
               </div>
             </div>
 
             <div class="mb-3">
-                <label for="address">Address</label>
-                <textarea class="form-control" placeholder="Enter address" id="address" autocomplete="off"></textarea>
-                <div class="fs-6 fw-light" id="charCount"></div>
+              <label for="address">Address</label>
+              <textarea
+                class="form-control"
+                placeholder="Enter address"
+                id="address"
+                autocomplete="off"
+              ></textarea>
+              <div class="fs-6 fw-light" id="charCount"></div>
             </div>
 
             <div class="mb-3">
               <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password"/>
+              <input type="password" class="form-control" id="password" />
             </div>
 
             <div class="mb-3">
-              <label for="confirmpassword" class="form-label">Confirm Password</label>
-              <input type="password" class="form-control" id="confirmpassword"/>
+              <label for="confirmpassword" class="form-label"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="confirmpassword"
+              />
             </div>
 
-            <button id="signup" type="submit" class="btn btn-dark">Signup</button>
+            <button id="signup" type="button" class="btn btn-dark">
+              Signup
+            </button>
           </form>
         </div>
       </div>
       <!-- FOOTER -->
-
       <footer class="bg-black py-5">
         <div class="container-fluid">
           <ul class="nav justify-content-center pb-3 mb-3">

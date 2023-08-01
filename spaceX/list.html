@@ -134,7 +134,10 @@
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link text-uppercase" aria-current="page" href="signup.html"
+                <a
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  href="signup.html"
                   >Account</a
                 >
               </li>
@@ -164,8 +167,14 @@
               <div class="form-group mb-2">
                 <div class="row mb-4">
                   <div class="col-md-2 text-start">
-                    <label class="mb-2" for="items-per-page">Items per page</label>
-                    <select id="items-per-page" class="form-select" aria-label="items per page">
+                    <label class="mb-2" for="items-per-page"
+                      >Items per page</label
+                    >
+                    <select
+                      id="items-per-page"
+                      class="form-select"
+                      aria-label="items per page"
+                    >
                       <option value="8" selected>8</option>
                       <option value="16">16</option>
                       <option value="24">24</option>
@@ -173,7 +182,11 @@
                   </div>
                   <div class="col-md-3 text-start">
                     <label class="mb-2" for="sort-by">Sort By</label>
-                    <select id="sort-by" class="form-select" aria-label="sort-by">
+                    <select
+                      id="sort-by"
+                      class="form-select"
+                      aria-label="sort-by"
+                    >
                       <option value="name-asc" selected>
                         Name - Ascending
                       </option>
@@ -184,7 +197,11 @@
                   </div>
                   <div class="col-md-3 text-start">
                     <label class="mb-2" for="product-type">Product Type</label>
-                    <select id="product-type" class="form-select" aria-label="product-type">
+                    <select
+                      id="product-type"
+                      class="form-select"
+                      aria-label="product-type"
+                    >
                       <option value="all" selected>All</option>
                       <option value="tshirt">T-Shirt</option>
                       <option value="hat">Hat</option>
@@ -197,7 +214,11 @@
                   </div>
                   <div class="col-md-2 text-start">
                     <label class="mb-2" for="product-color">Color</label>
-                    <select id="product-color" class="form-select" aria-label="product-color">
+                    <select
+                      id="product-color"
+                      class="form-select"
+                      aria-label="product-color"
+                    >
                       <option value="all" selected>All</option>
                       <option value="black">Black</option>
                       <option value="brown">Brown</option>
@@ -207,13 +228,20 @@
                   </div>
                   <div class="col-md-2 text-start">
                     <label class="mb-2" for="product-size">Size</label>
-                    <select id="product-size" class="form-select" aria-label="product-size"></select>
+                    <select
+                      id="product-size"
+                      class="form-select"
+                      aria-label="product-size"
+                    ></select>
                   </div>
                   <div id="no-products" class="mt-5">No Products</div>
                 </div>
               </div>
-            
-              <div id="product-list" class="row text-center text-lg-start"></div>
+
+              <div
+                id="product-list"
+                class="row text-center text-lg-start"
+              ></div>
               <nav aria-label="Page navigation example">
                 <ul
                   id="pagination"
@@ -276,7 +304,7 @@
     <!-- Bootstrap Bundle Js -->
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/cartcount.js"></script>
-    <script src="assets/js/pagination.js"></script>
+    <script src="assets/js/product-list.js"></script>
     <!-- Plus minu for range selector -->
     <script>
       $(document).ready(function () {
