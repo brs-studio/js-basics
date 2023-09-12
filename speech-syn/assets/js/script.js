@@ -8,6 +8,7 @@ Description: Speech Synthesis
 
 /* Get Our Elements */
 // Create a SpeechSynthesisUtterance object, used to configure speech synthesis options
+//  Interface in the Web Speech API
 const msg = new SpeechSynthesisUtterance();
 
 // An array to store available voices
@@ -16,8 +17,8 @@ let voices = [];
 // Get the elements from the DOM
 const voicesDropdown = document.querySelector('[name="voice"]');
 const options = document.querySelectorAll('[type="range"], [name="text"]');
-const speakButton = document.querySelector("#speak");
-const stopButton = document.querySelector("#stop");
+const speakButton = document.getElementById("speak");
+const stopButton = document.getElementById("stop");
 
 // Set the initial text for speech synthesis
 msg.text = document.querySelector('[name="text"]').value;
@@ -27,8 +28,10 @@ let chathams_blue = "#1A4B84";
 
 // Function to populate available voices in the dropdown
 function populateVoices() {
-  voices = this.getVoices();
-
+// getVoices() method of the SpeechSynthesis interface returns a list of SpeechSynthesisVoic
+  voices = this.getVoices(); 
+  
+  console.log(voices);
   // Filter available voices for English and create options for the dropdown
   voicesDropdown.innerHTML = voices
     .filter((voice) => voice.lang.includes("en"))
@@ -56,7 +59,7 @@ function toggle(startOver = true) {
 // Function to set options (rate, pitch, etc.) for speech synthesis
 function setOption() {
   console.log(this.name, this.value);
-  msg[this.name] = this.value;
+  msg[this.name] = this.value; // this.name --> rate or pitch
   toggle();
 }
 
@@ -66,6 +69,7 @@ speechSynthesis.addEventListener("voiceschanged", populateVoices);
 // Event listeners for user interactions
 voicesDropdown.addEventListener("change", setVoice);
 options.forEach((option) => option.addEventListener("change", setOption));
+
 speakButton.addEventListener("click", toggle);
 stopButton.addEventListener("click", () => toggle(false));
 

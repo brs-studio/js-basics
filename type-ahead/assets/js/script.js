@@ -21,11 +21,12 @@ let chathams_blue = "#1A4B84";
 const matchInput = (inputString, cities) =>
   cities.filter(
     ({ city, state }) =>
-      city.match(new RegExp(inputString, "gi")) ||
+      city.match(new RegExp(inputString, "gi")) || //g- global and i - case insensitive
       state.match(new RegExp(inputString, "gi"))
   );
 
 // Function to format numbers with commas for displaying population
+// thousands separators
 const numberWithCommas = (x) =>
   x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
@@ -34,10 +35,12 @@ const numberWithCommas = (x) =>
 const displayMatches = (el) => {
   const matchArray = matchInput(el.value, cities);
 
+  console.log(matchArray);
   // Generate the HTML for the suggestions list
   const suggestionList = matchArray
     .map((location) => {
       const regex = new RegExp(el.value, "gi");
+      
       const cityName = location.city.replace(
         regex,
         `<span class ="hl">${el.value}</span>`

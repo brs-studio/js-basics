@@ -7,27 +7,37 @@ Description: JS clock
 **/
 
 /* Get DOM Elements */
-const secondHand = document.querySelector(".second-hand");
-const minuteHand = document.querySelector(".min-hand");
-const hourHand = document.querySelector(".hour-hand");
+const secondHand = document.querySelector(".secondHand");
+const hourHand = document.querySelector(".hourHand");
+const minuteHand = document.querySelector(".minuteHand");
 
 // Helper function responsible for calculating the amount to rotate a hand
-const calcDegrees = (time, max) => (time / max) * 360 + 90;
+const calcDegrees = (time, max) => (time / max) * 360;
 
-setInterval(() => {
+function updateClock() {
   // Create new Date object
-  const now = new Date();
+  const currentTime = new Date();
+
+  // console.log(currentTime);
 
   // Get current seconds, minutes, & hours and calculate the degree shift
-  const secondHandDegrees = calcDegrees(now.getSeconds(), 60);
-  const minuteHandDegrees = calcDegrees(now.getMinutes(), 60);
-  const hourHandDegrees = calcDegrees(now.getHours(), 12);
+  const secondHandDegrees = calcDegrees(currentTime.getSeconds(), 60);
+  const minuteHandDegrees = calcDegrees(currentTime.getMinutes(), 60);
+  const hourHandDegrees = calcDegrees(
+    currentTime.getHours() * 60 + currentTime.getMinutes(),
+    720 // 12 hours * 60 minutes
+  );
 
+  console.log(minuteHandDegrees);
+  console.log(hourHandDegrees);
   // Apply rotation to the clock hands corresponding with current time value
   secondHand.style.transform = `rotate(${secondHandDegrees}deg)`;
   minuteHand.style.transform = `rotate(${minuteHandDegrees}deg)`;
   hourHand.style.transform = `rotate(${hourHandDegrees}deg)`;
-}, 1000);
+}
+
+// update clock for each time
+setInterval(updateClock, 1000);
 
 let chathams_blue = "#1A4B84";
 
