@@ -51,3 +51,7 @@
   padding-right: 5px;
   font-size: 2.5rem;
 }
+
+header .navbar-brand {
+  height: 150px;
+}

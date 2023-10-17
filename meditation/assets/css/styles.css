@@ -116,7 +116,7 @@ header .navbar-brand {
     padding: 0;
     z-index: 1;
     width: 213px;
-    height: 109px;
+    height: 150px;
     background-color: var(--primary-color) ;
     border-radius: 0;
 }
