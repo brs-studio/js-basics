@@ -27,7 +27,7 @@ a:hover {
   height: 20px;
 }
 
-.nervous {
+.txt-1 {
   position: absolute;
   bottom: 220px;
   left: 50%;
@@ -37,11 +37,11 @@ a:hover {
   margin-left: -180px;
   display: none;
 }
-.nervous.show {
+.txt-1.show {
   display: block;
 }
 
-.cant-wait {
+.txt-2 {
   position: absolute;
   bottom: 220px;
   left: 50%;
@@ -50,7 +50,7 @@ a:hover {
   height: 65px;
   display: none;
 }
-.cant-wait.show {
+.txt-2.show {
   display: block;
 }
 

@@ -8,8 +8,8 @@ Description: Rocket Launch
 
 // DOM ELEMENTS
 let countDownElement = document.getElementById("countdown");
-let nervousTxtElement = document.getElementById("nervous");
-let cantwaitTxtElement = document.getElementById("cant-wait");
+let nervousTxtElement = document.getElementById("txt-1");
+let cantwaitTxtElement = document.getElementById("txt-2");
 
 let timer = null;
 let countdownNumber = 10;
@@ -27,15 +27,15 @@ let changeState = function (state) {
       countDownElement.innerHTML = countdownNumber;
 
       if (countdownNumber > 4 && countdownNumber <= 7) {
-        nervousTxtElement.className = "nervous show";
+        nervousTxtElement.className = "txt-1 show";
       } else {
-        nervousTxtElement.className = "nervous";
+        nervousTxtElement.className = "txt-1";
       }
 
       if (countdownNumber > 1 && countdownNumber <= 4) {
-        cantwaitTxtElement.className = "cant-wait show";
+        cantwaitTxtElement.className = "txt-2 show";
       } else {
-        cantwaitTxtElement.className = "cant-wait";
+        cantwaitTxtElement.className = "txt-2";
       }
 
       if (countdownNumber <= 0) {
@@ -46,13 +46,12 @@ let changeState = function (state) {
     let success = setTimeout(function () {
       let randomNumber = Math.round(Math.random() * 10);
 
-      console.log("randomNumber:", randomNumber);
+      console.log("random number = ", randomNumber);
 
-      // succes
       if (randomNumber > 2) {
-        changeState(4);
+        changeState(4); //launch success state
       } else {
-        changeState(5);
+        changeState(5); //launch failed state
       }
     }, 2000);
   }

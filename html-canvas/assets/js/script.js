@@ -16,7 +16,7 @@ const ctx = canvas.getContext("2d"); // 2 prams - context type and context attri
 // Default theme
 let chathams_blue = "#1A4B84";
 
-// apply some properties to ctx
+// Apply some properties to ctx
 ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
@@ -29,17 +29,17 @@ let lastY = 0;
 let hue = 0;
 
 function draw(e) {
-  if (!isDrawing) return; // check for mouse click
+  if (!isDrawing) return; // Check for mouse click
   ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
 
-  ctx.beginPath(); //begin a new path
+  ctx.beginPath(); //Begin a new path
 
-  // start drawing the line
-  ctx.moveTo(lastX, lastY); 
+  // Start drawing the line
+  ctx.moveTo(lastX, lastY);
   console.log(`LAST X - ${lastX}`);
   console.log(`LAST Y - ${lastY}`);
 
-  // go to current mouse location
+  // Go to current mouse location
   ctx.lineTo(e.offsetX, e.offsetY);
   console.log(`CURRENT X - ${e.offsetX}`);
   console.log(`CURRENT Y - ${e.offsetY}`);
@@ -53,20 +53,28 @@ function draw(e) {
   }
 }
 
-
 // Event Listeners
 canvas.addEventListener("mousedown", (e) => {
   isDrawing = true;
-  [lastX, lastY] = [e.offsetX, e.offsetY]; //mouse cursor's coordinates 
+  [lastX, lastY] = [e.offsetX, e.offsetY]; //Mouse cursor's coordinates
 });
 
 canvas.addEventListener("mousemove", draw);
 canvas.addEventListener("mouseup", () => (isDrawing = false));
 canvas.addEventListener("mouseout", () => (isDrawing = false));
 
-// set theme
+// Set theme
 function setTheme(theme) {
   document.documentElement.style.setProperty("--primary-color", theme);
   localStorage.setItem("movie-theme", theme);
 }
 setTheme(localStorage.getItem("movie-theme") || chathams_blue);
+
+console.log("hello world");
+
+let num = 10;
+num == 10;
+
+function addNum(a = 10, b = 20) {
+  return a + b;
+}
