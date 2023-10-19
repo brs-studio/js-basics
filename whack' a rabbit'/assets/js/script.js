@@ -80,6 +80,7 @@ function startGame() {
 
 // Function to handle a mole being "bonked" (clicked on)
 function bonk(e) {
+  console.log(e);
   if (!e.isTrusted || timeUp) return; // Check if the click event is trusted and the game is not over
   score++;
   this.classList.remove("up");
