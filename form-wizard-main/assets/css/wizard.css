@@ -1,85 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: rgb(233, 236, 246);
-  background: -moz-linear-gradient(
-    141deg,
-    rgba(233, 236, 246, 1) 0%,
-    rgba(198, 211, 230, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    141deg,
-    rgba(233, 236, 246, 1) 0%,
-    rgba(198, 211, 230, 1) 100%
-  );
-  background: linear-gradient(
-    141deg,
-    rgba(233, 236, 246, 1) 0%,
-    rgba(198, 211, 230, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9ecf6",endColorstr="#c6d3e6",GradientType=1);
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.wrapper {
-  max-width: 1200px;
-  margin: auto;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 900;
-  color: #333;
-  margin: 1.5em 0 0.5em;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.8em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-h4 {
-  font-size: 1.3em;
-}
-
-strong {
-  font-weight: 600;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  background-color: rgba(51, 153, 204, 0.2);
-}
-
-img {
-  max-width: 100%;
-}
-
 .img-placeholder {
-  background-image: url('http://placehold.it/200x100/CC99CC/ffffff&text=Feature');
+  background-image: url("http://placehold.it/200x100/CC99CC/ffffff&text=Feature");
   background-size: cover;
   min-height: 100px;
   min-width: 100px;
 }
 
-html,
-body {
-  height: 100%;
-}
 form,
 .overflow {
   overflow-y: auto;
@@ -160,7 +85,6 @@ form,
   /*background: deepskyblue;*/
   background: rgba(102, 51, 255, 0.1);
   margin: 0 0 1em;
-  border: 1px solid #33cccc;
   border-radius: 3px;
   display: flex;
   -webkit-flex-flow: row wrap;
@@ -184,7 +108,6 @@ form,
 
 .OuterFormBlock {
   background: #fff;
-  border-radius: 30px;
   overflow: hidden;
 }
 .formMiddleBlock {
@@ -204,16 +127,6 @@ form,
   top: 10px;
   right: 10px;
   background-color: #fff;
-}
-
-.brandSection {
-  padding: 1em 0;
-}
-.brandSection h1 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1em;
-  padding-right: 3rem;
 }
 
 .passwordWrap {
@@ -292,10 +205,10 @@ form,
   position: relative;
 }
 .rightBlock::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
-  background: transparent url('../images/rocket.png') no-repeat 38% 50%;
+  background: transparent url("../images/rocket.png") no-repeat 38% 50%;
   position: absolute;
   top: 0;
 }
@@ -305,15 +218,16 @@ form div {
   margin-bottom: 15px;
   position: relative;
 }
+
 label {
   font-size: 14px;
   padding-bottom: 0.5em;
   display: block;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'],
+input[type="text"],
+input[type="email"],
+input[type="password"],
 select {
   border: 1px solid #1758c1;
   border-radius: 6px;
@@ -327,6 +241,7 @@ select {
   width: 100%;
   align-items: center;
 }
+
 .radioGroup .radioGroup {
   margin-bottom: 0;
 }
@@ -334,37 +249,25 @@ select {
   padding-right: 20px;
 }
 
-.radioGroup input[type='radio'] {
+.radioGroup input[type="radio"] {
   margin-right: 8px;
   margin-top: -4px;
 }
 
 /* Radio button and Checkbox .required needs an after to show */
-input[type='radio'].required::after,
-input[type='checkbox'].required::after {
+input[type="radio"].required::after,
+input[type="checkbox"].required::after {
   display: block;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   background: transparent;
-  content: '';
+  content: "";
   border: 2px solid #1758c1 !important;
   box-sizing: border-box;
 }
 /* Radio buttons are round, so add 100% border radius. */
-input[type='radio'].required::after {
+input[type="radio"].required::after {
   border-radius: 100%;
-}
-
-button {
-  background: #1758c1;
-  text-align: center;
-  border-radius: 6px;
-  padding: 1em 0;
-  width: 100%;
-  border: 0;
-  color: #fff;
-  font-size: 14px;
-  margin-top: 1em;
 }
 
 .mb-10 {
@@ -549,27 +452,27 @@ ul li:last-child {
   }
 }
 .content-1of1::before {
-  content: '1';
+  content: "1";
 }
 
 .content-1of2::before {
-  content: '1/2';
+  content: "1/2";
 }
 
 .content-1of3::before {
-  content: '1/3';
+  content: "1/3";
 }
 
 .content-1of4::before {
-  content: '1/4';
+  content: "1/4";
 }
 
 .content-1of6::before {
-  content: '1/6';
+  content: "1/6";
 }
 
 .content-1of12::before {
-  content: '1/12';
+  content: "1/12";
 }
 
 .plans {
@@ -582,7 +485,7 @@ ul li:last-child {
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background: #fff;
+  /* background: #fff; */
   border-radius: 20px;
 
   -webkit-box-align: center;
@@ -593,7 +496,7 @@ ul li:last-child {
   margin-bottom: 15px;
 }
 
-.plans .plan input[type='radio'] {
+.plans .plan input[type="radio"] {
   position: absolute;
   opacity: 0;
 }
@@ -669,8 +572,8 @@ ul li:last-child {
   box-shadow: 0px 3px 5px 0px #e8e8e8;
 }
 
-.plans .plan input[type='radio']:checked + .plan-content:after {
-  content: '';
+.plans .plan input[type="radio"]:checked + .plan-content:after {
+  content: "";
   position: absolute;
   height: 8px;
   width: 8px;
@@ -684,7 +587,7 @@ ul li:last-child {
   opacity: 0;
 }
 
-.plans .plan input[type='radio']:checked + .plan-content {
+.plans .plan input[type="radio"]:checked + .plan-content {
   border: 2px solid #216ee0;
   background: #eaf1fe;
   -webkit-transition: ease-in 0.3s;
@@ -718,7 +621,7 @@ ul li:last-child {
     display: inline-block;
   }
 
-  .plans .plan input[type='radio']:checked + .plan-content:after {
+  .plans .plan input[type="radio"]:checked + .plan-content:after {
     top: 45%;
     -webkit-transform: translate(-50%);
     -ms-transform: translate(-50%);
@@ -742,7 +645,7 @@ ul li:last-child {
     transition: height 0.4s;
   }
 
-  .plans .plan input[type='radio']:checked + .plan-content:after {
+  .plans .plan input[type="radio"]:checked + .plan-content:after {
     top: 20px;
     right: 10px;
   }
@@ -806,70 +709,6 @@ ul li:last-child {
   margin-bottom: 0;
 }
 
-p {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
-}
-/* span.showBtn {
-  display: none;
-}
-
-form .indicator {
-  height: 6px;
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  display: none;
-}
-form .indicator span {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background: lightgrey;
-  border-radius: 5px;
-}
-form .indicator span:nth-child(2) {
-  margin: 0 3px;
-}
-form .indicator span:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-}
-.indicator span.weak:before {
-  background-color: #ff4757;
-}
-.indicator span.medium:before {
-  background-color: orange;
-}
-.indicator span.strong:before {
-  background-color: #23ad5c;
-}
-form .pwdError {
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  text-align: center;
-  display: none;
-}
-form .pwdError.weak {
-  color: #ff4757;
-}
-form .pwdError.medium {
-  color: orange;
-}
-form .pwdError.strong {
-  color: #23ad5c;
-} */
-/* end */
-
 button {
   cursor: pointer;
 }
@@ -892,7 +731,7 @@ button {
   opacity: 1;
   pointer-events: auto;
 }
-.modal {
+.modall {
   background-color: #fff;
   border-radius: 5px;
   margin-left: -470px;
@@ -980,7 +819,10 @@ button {
   flex: 1;
 }
 
-.datepicker > .datepicker_inner_container > .datepicker_timelist > div.timelist_item {
+.datepicker
+  > .datepicker_inner_container
+  > .datepicker_timelist
+  > div.timelist_item {
   border: 1px solid #f0f0f0;
   border-radius: 6px;
   text-align: center;
@@ -990,13 +832,34 @@ button {
   border: 0;
 }
 
-.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.active {
+.datepicker
+  > .datepicker_inner_container
+  > .datepicker_calendar
+  > .datepicker_table
+  > tbody
+  > tr
+  > td.active {
   border-radius: 50%;
   width: 40px;
 }
 
-
 .datepicker > .datepicker_inner_container > .datepicker_calendar > table td,
 .datepicker > .datepicker_inner_container > .datepicker_calendar > table th {
   font-size: 12px;
+}
+
+header .navbar-brand {
+  height: 150px;
+}
+
+.setting {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  margin-bottom: 6px;
 }

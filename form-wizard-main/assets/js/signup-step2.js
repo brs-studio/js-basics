@@ -1,3 +1,11 @@
+/** 
+Author: Build Rise Shine with Nyros (BRS) 
+Created: 2023 
+Library / Component: Step 2 form
+Description: Logic for step 2 form
+(c) Copyright by BRS with Nyros. 
+**/
+
 // Validation for the form 2 [radio buttons and dropdown] for signup-step2.html
 function validate() {
   var plan = document.forms['myform']['plan'].value
