@@ -8,8 +8,8 @@ Description: Logic for signup form
 
 /*form validation logic*/
 window.onload = function () {
-  var root = document.forms[0].elements
-  var elementNumber
+  let root = document.forms[0].elements
+  let elementNumber
   for (elementNumber = 0; elementNumber < root.length; elementNumber++) {
     if (root[elementNumber].type == 'text') {
       root[elementNumber].onfocus = function () {
@@ -54,9 +54,9 @@ window.onload = function () {
 //-----------------------------------------------------------------
 //onfocus function
 function myFocus(field) {
-  var err = field.name + 'error'
+  let err = field.name + 'error'
   if (field.value.length == 0 && !document.getElementById(err)) {
-    var errorMsg = document.createElement('span')
+    let errorMsg = document.createElement('span')
     errorMsg.id = err
     errorMsg.textContent = ''
     errorMsg.style.color = ''
@@ -64,16 +64,16 @@ function myFocus(field) {
   }
 }
 //-------------------------validations--------------------------------------------------------
-//text boxes validation+
+//text boxes validation
 function text(textValid) {
-  var type = textValid.getAttribute('type')
-  var show = textValid.name + 'error'
-  var minLength = textValid.getAttribute('min')
-  var maxLength = textValid.getAttribute('max')
+  let type = textValid.getAttribute('type')
+  let show = textValid.name + 'error'
+  let minLength = textValid.getAttribute('min')
+  let maxLength = textValid.getAttribute('max')
   if (minLength == null) minLength = 2
   if (maxLength == null) maxLength = 50
   if (type == 'text') {
-    var textValue = textValid.value.length
+    let textValue = textValid.value.length
     if (textValue == 1) {
       document.getElementById(show).innerHTML = '&#10008; minimum 2 chars'
       document.getElementById(show).style.color = 'red'
@@ -90,11 +90,11 @@ function text(textValid) {
 //---------------------------------------------------------------------
 // Email validation function
 function email(emailValid) {
-  var type = emailValid.getAttribute('type')
-  var show = emailValid.name + 'error'
+  let type = emailValid.getAttribute('type')
+  let show = emailValid.name + 'error'
   if (type == 'email') {
-    var match = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-    var emailValue = emailValid.value.length
+    let match = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    let emailValue = emailValid.value.length
     if (emailValue == 0) {
       document.getElementById(show).innerHTML = '&#10008; Not Empty'
       document.getElementById(show).style.color = 'balck'
@@ -172,11 +172,11 @@ function strengthChecker() {
   return barLength.length > 2
 }
 function password(pwdValid) {
-  var type = pwdValid.getAttribute('type')
-  var show = pwdValid.name + 'error'
+  let type = pwdValid.getAttribute('type')
+  let show = pwdValid.name + 'error'
   if (type == 'password') {
     
-    var pwdValue = pwdValid.value.length
+    let pwdValue = pwdValid.value.length
     if (pwdValue == 0) {
       document.getElementById(show).innerHTML = '&#10008; enter minimum 4 characters'
       document.getElementById(show).style.color = 'red'
@@ -204,15 +204,15 @@ function validation(form) {
   const mail = document.getElementById('email')
   const mailID = mail.value
   localStorage.setItem('email', `${mailID}`)
-  var x = document.forms[0].elements
-  var radioCheck = 0,
+  let x = document.forms[0].elements
+  let radioCheck = 0,
     radioButton = 0
-  for (var i = 0; i < x.length; i++) {
-    var funRegex = /^[A-Za-z0-9 ]/
-    var match = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-    var type = x[i].type
-    var minLength = x[i].getAttribute('min')
-    var maxLength = x[i].getAttribute('max')
+  for (let i = 0; i < x.length; i++) {
+    let funRegex = /^[A-Za-z0-9 ]/
+    let match = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    let type = x[i].type
+    let minLength = x[i].getAttribute('min')
+    let maxLength = x[i].getAttribute('max')
     if (type == 'text') {
       if (minLength == null) minLength = 2
       if (maxLength == null) maxLength = 50
@@ -259,8 +259,8 @@ function validation(form) {
         return false
       }
     } else if (type == 'radio') {
-      var l = x[i].parentNode.children.length
-      for (var j = 0; j < l; j++) {
+      let l = x[i].parentNode.children.length
+      for (let j = 0; j < l; j++) {
         if (x[i].parentNode.children[j].type == 'radio') {
           radioButton++
         }
@@ -283,7 +283,7 @@ function validation(form) {
 //----------------------------------------------------------------------------------------
 // Show password function
 function toggle() {
-  var showPwd = document.getElementById('password')
+  let showPwd = document.getElementById('password')
   if (showPwd.type !== 'password') {
     showPwd.type = 'password'
     return true

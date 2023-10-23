@@ -7,7 +7,7 @@ Description: Logic for step 3 form
 **/
 
 // Date and time picker
-var dateToday = new Date();    
+let dateToday = new Date();    
 
 $(function () {
   $('#date_picker').dtpicker({minDate: dateToday 

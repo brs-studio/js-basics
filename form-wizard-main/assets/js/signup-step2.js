@@ -8,8 +8,8 @@ Description: Logic for step 2 form
 
 // Validation for the form 2 [radio buttons and dropdown] for signup-step2.html
 function validate() {
-  var plan = document.forms['myform']['plan'].value
-  var sel_opt = document.forms['myform']['sel_opt'].value
+  let plan = document.forms['myform']['plan'].value
+  let sel_opt = document.forms['myform']['sel_opt'].value
 
   if (plan == '') {
     document.getElementById('error1').innerHTML = 'Please select anyone'
