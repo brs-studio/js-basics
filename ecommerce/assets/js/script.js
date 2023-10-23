@@ -8,6 +8,8 @@ Description: Landing page
 
 // Default theme
 let chathams_blue = "#1A4B84";
+const purchaseBtn = document.getElementById("purchase")
+purchaseBtn.style.display = "none"
 
 // check loading
 if (document.readyState === "loading") {
@@ -25,7 +27,7 @@ function ready() {
   }
 
   const quantityInputs = document.getElementsByClassName("cart-quantity-input");
-  console.log(quantityInputs.length);
+  // console.log(quantityInputs.length);
   for (let i = 0; i < quantityInputs.length; i++) {
     let input = quantityInputs[i];
     input.addEventListener("change", quantityChanged);
@@ -50,17 +52,18 @@ function purchaseClicked() {
     cartItems.removeChild(cartItems.firstChild);
   }
   updateCartTotal();
+  purchaseBtn.style.display = 'none'
 }
 
 // Add to cart functionality
 function addToCart(e) {
-  console.log(e);
+  purchaseBtn.style.display = 'block'
   let button = e.target;
   const shopItem = button.parentElement.parentElement;
   const title = shopItem.getElementsByClassName("shop-item-title")[0].innerText;
   const price = shopItem.getElementsByClassName("shop-item-price")[0].innerText;
   const imageSrc = shopItem.getElementsByClassName("shop-item-image")[0].src;
-  console.log(title, price, imageSrc);
+  // console.log(title, price, imageSrc);
   addItemToCart(title, price, imageSrc);
   updateCartTotal();
 }
@@ -84,7 +87,7 @@ function addItemToCart(title, price, image) {
     </div>
     <span class="cart-price cart-column">${price}</span>
     <div class="cart-quantity cart-column">
-        <input class="cart-quantity-input" type="number" value="2">
+        <input class="cart-quantity-input" type="number" value="1">
         <button class="btn btn-danger" type="button">REMOVE</button>
     </div>
     `;
@@ -113,6 +116,13 @@ function removeCartItem(e) {
   const buttonClicked = e.target;
   buttonClicked.parentElement.parentElement.remove();
   updateCartTotal();
+  // logic to remove purchase btn
+  const items = document.getElementsByClassName("cart-row")
+  console.log(items);
+  console.log(items.length);
+  if(items.length === 1){
+    purchaseBtn.style.display = 'none'
+  }
 }
 
 // Function that handles the cart total updation
